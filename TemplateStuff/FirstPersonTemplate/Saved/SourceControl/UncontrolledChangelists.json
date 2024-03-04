@@ -1,0 +1,28 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/FirstPerson/Blueprints/BP_Target.uasset",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/0/NC/TKXVGM24S7M3FJ297T619A.uasset",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/I8/OP0GUCNN1KBLOJORFVIWI6.uasset",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/FI/VTU4C7TQQKUJOWX5Q01J0X.uasset",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/FirstPerson/Blueprints/GM_TargetGame.uasset",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/FirstPerson/Maps/FirstPersonMap.umap",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/FirstPerson/Blueprints/WBP_UI.uasset",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/FirstPerson/Blueprints/WBP_EndScree.uasset",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/FirstPerson/Blueprints/WBP_EndScreen.uasset",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/D/H7/IMJZQ6QDY6CBX1Q43RJXDL.uasset",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/F/5L/STQA8AO7RC3YVS7SR20O0S.uasset",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/FirstPerson/Blueprints/BP_Rifel.uasset",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/FirstPerson/Blueprints/BP_Bullet.uasset",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/3/S9/EWY3R0GWVKZN954ICQQQCP.uasset",
+				"C:/Users/sephe/Desktop/Unreal/TemplateStuff/FirstPersonTemplate/Content/Target/SM_Target_SM_Target/BP_Target6_GeometryCollection.uasset",
+				"C:/Users/sephe/Desktop/422c18-056a-018-6a2c-f24761f452e2_TargetGameAssets/FirstPersonTemplate/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset"
+			]
+		}
+	]
+}
