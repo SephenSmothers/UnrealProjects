@@ -1,0 +1,93 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+#ifdef A__SMOTHERSSEPHEN_BaseCharacter_generated_h
+#error "BaseCharacter.generated.h already included, missing '#pragma once' in BaseCharacter.h"
+#endif
+#define A__SMOTHERSSEPHEN_BaseCharacter_generated_h
+
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_SPARSE_DATA
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_RPC_WRAPPERS
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesABaseCharacter(); \
+	friend struct Z_Construct_UClass_ABaseCharacter_Statics; \
+public: \
+	DECLARE_CLASS(ABaseCharacter, ACharacter, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/A__SmothersSephen"), NO_API) \
+	DECLARE_SERIALIZER(ABaseCharacter)
+
+
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_INCLASS \
+private: \
+	static void StaticRegisterNativesABaseCharacter(); \
+	friend struct Z_Construct_UClass_ABaseCharacter_Statics; \
+public: \
+	DECLARE_CLASS(ABaseCharacter, ACharacter, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/A__SmothersSephen"), NO_API) \
+	DECLARE_SERIALIZER(ABaseCharacter)
+
+
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API ABaseCharacter(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_ABSTRACT_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABaseCharacter) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ABaseCharacter); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABaseCharacter); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API ABaseCharacter(ABaseCharacter&&); \
+	NO_API ABaseCharacter(const ABaseCharacter&); \
+public:
+
+
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API ABaseCharacter(ABaseCharacter&&); \
+	NO_API ABaseCharacter(const ABaseCharacter&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ABaseCharacter); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABaseCharacter); \
+	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(ABaseCharacter)
+
+
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_PRIVATE_PROPERTY_OFFSET
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_9_PROLOG
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_SPARSE_DATA \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_RPC_WRAPPERS \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_INCLASS \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_SPARSE_DATA \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_INCLASS_NO_PURE_DECLS \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_12_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> A__SMOTHERSSEPHEN_API UClass* StaticClass<class ABaseCharacter>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
