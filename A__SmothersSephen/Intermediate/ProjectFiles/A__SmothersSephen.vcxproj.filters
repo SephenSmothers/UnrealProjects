@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\A__SmothersSephen.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{12DF3186-0FF4-4DFF-BB8B-C5C139C7E600}</UniqueIdentifier>
+      <UniqueIdentifier>{DF38CEAD-D84D-4A21-B0DE-BB409BE87520}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\A__SmothersSephen.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{033C5637-9D3B-4D68-B2FE-C5F9CEB559A7}</UniqueIdentifier>
+      <UniqueIdentifier>{8D94AA67-35F5-43B5-933B-8781B8AA00B0}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\A__SmothersSephen">
-      <UniqueIdentifier>{749F2DA2-E6FF-452E-BA22-E47FE84BFCAC}</UniqueIdentifier>
+      <UniqueIdentifier>{E5B9278B-3D7F-4B0C-A17B-2CD03C192E63}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\A__SmothersSephen\A__SmothersSephen.Build.cs">
       <Filter>Source\A__SmothersSephen</Filter>
@@ -45,10 +45,10 @@
       <Filter>Source\A__SmothersSephen</Filter>
     </ClInclude>
     <Filter Include="Source\A__SmothersSephen\Private">
-      <UniqueIdentifier>{AB8E64C2-1484-4077-BB93-7522F72F354E}</UniqueIdentifier>
+      <UniqueIdentifier>{0198E562-346D-42E1-89D5-CD4EE0833784}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\A__SmothersSephen\Private\Actors">
-      <UniqueIdentifier>{EB49EF27-266D-425D-A8C1-62BB3F332747}</UniqueIdentifier>
+      <UniqueIdentifier>{610FAECF-9A2E-4505-BD79-8238ADC4ECF1}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\A__SmothersSephen\Private\Actors\BaseCharacter.cpp">
       <Filter>Source\A__SmothersSephen\Private\Actors</Filter>
@@ -57,22 +57,22 @@
       <Filter>Source\A__SmothersSephen\Private\Actors</Filter>
     </ClCompile>
     <Filter Include="Source\A__SmothersSephen\Private\Both_BP_Code">
-      <UniqueIdentifier>{C379120D-BBA5-4EBB-9D6C-0A626FB198B7}</UniqueIdentifier>
+      <UniqueIdentifier>{38D2D089-673B-4537-AFDF-62E95AF94122}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\A__SmothersSephen\Private\Both_BP_Code\CharacterAnimation.cpp">
       <Filter>Source\A__SmothersSephen\Private\Both_BP_Code</Filter>
     </ClCompile>
     <Filter Include="Source\A__SmothersSephen\Private\Testing">
-      <UniqueIdentifier>{F1A972FD-5C14-416A-9649-52424FA768F8}</UniqueIdentifier>
+      <UniqueIdentifier>{4B363AE4-CB2D-46C6-A214-7FDA7544B6E9}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\A__SmothersSephen\Private\Testing\TestingVariable.cpp">
       <Filter>Source\A__SmothersSephen\Private\Testing</Filter>
     </ClCompile>
     <Filter Include="Source\A__SmothersSephen\Public">
-      <UniqueIdentifier>{F23F8366-F645-4EE4-9645-32605508106B}</UniqueIdentifier>
+      <UniqueIdentifier>{8536A8B3-A003-42C0-988B-407EF915A286}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\A__SmothersSephen\Public\Actors">
-      <UniqueIdentifier>{0F700885-3699-4BD7-8527-2A69509C7BB4}</UniqueIdentifier>
+      <UniqueIdentifier>{7FAE1606-7DC4-452E-A133-3E58C2DF1052}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\A__SmothersSephen\Public\Actors\BaseCharacter.h">
       <Filter>Source\A__SmothersSephen\Public\Actors</Filter>
@@ -81,13 +81,13 @@
       <Filter>Source\A__SmothersSephen\Public\Actors</Filter>
     </ClInclude>
     <Filter Include="Source\A__SmothersSephen\Public\Both_BP_Code">
-      <UniqueIdentifier>{E2F0B012-FB83-40B3-9746-EE2B2E6AECF5}</UniqueIdentifier>
+      <UniqueIdentifier>{1566D86C-F61D-429D-ABD8-01B3E4B09ACC}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\A__SmothersSephen\Public\Both_BP_Code\CharacterAnimation.h">
       <Filter>Source\A__SmothersSephen\Public\Both_BP_Code</Filter>
     </ClInclude>
     <Filter Include="Source\A__SmothersSephen\Public\Testing">
-      <UniqueIdentifier>{06F6E4B1-2277-4867-A39B-23970CBFAC29}</UniqueIdentifier>
+      <UniqueIdentifier>{6F6A2028-E2C4-41C6-88CB-06C492D95E5A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\A__SmothersSephen\Public\Testing\TestingVariable.h">
       <Filter>Source\A__SmothersSephen\Public\Testing</Filter>

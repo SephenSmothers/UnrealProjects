@@ -12,13 +12,10 @@ void UCharacterAnimation::NativeUpdateAnimation(float DeltaSeconds)
 	{
 		//isValid
 		Speed = Pawn->GetVelocity().Size();
-
+		Direction = CalculateDirection(Pawn->GetVelocity(), Pawn->GetActorRotation());
 	}
 	else
 	{
-		//isValidNotValid
-
-
+		//isNotValid
 	}
-
 }

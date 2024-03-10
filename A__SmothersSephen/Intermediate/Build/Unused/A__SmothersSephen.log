@@ -1,18 +1,15 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects).
-  Parsing headers for A__SmothersSephenEditor
-    Running UnrealHeaderTool "C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\A__SmothersSephen.uproject" "C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\A__SmothersSephenEditor\Development\A__SmothersSephenEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\sephe\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  LogInit: Display: Loading text-based GConfig....
-  Reflection code generated for A__SmothersSephenEditor in 4.91673 seconds
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sephe\Desktop\Unreal\UnrealProjects).
+  Creating makefile for A__SmothersSephenEditor (no existing makefile)
   Building A__SmothersSephenEditor...
   Using Visual Studio 2022 14.39.33521 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519) and Windows 10.0.22000.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 6 actions with 20 processes...
+  Building 6 actions with 16 processes...
     [1/6] CharacterAnimation.cpp
-    [2/6] A__SmothersSephen.init.gen.cpp
-    [3/6] CharacterAnimation.gen.cpp
-    [4/6] UE4Editor-A__SmothersSephen-0025.lib
-       Creating library C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0025.lib and object C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0025.exp
-    [5/6] UE4Editor-A__SmothersSephen-0025.dll
-       Creating library C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0025.suppressed.lib and object C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0025.suppressed.exp
+    [2/6] BaseCharacter.cpp
+    [3/6] BasePlayer.cpp
+    [4/6] UE4Editor-A__SmothersSephen-0001.lib
+       Creating library C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0001.lib and object C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0001.exp
+    [5/6] UE4Editor-A__SmothersSephen-0001.dll
+       Creating library C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0001.suppressed.lib and object C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0001.suppressed.exp
     [6/6] A__SmothersSephenEditor.target
-  Total time in Parallel executor: 8.27 seconds
-  Total execution time: 14.64 seconds
+  Total time in Parallel executor: 6.92 seconds
+  Total execution time: 8.62 seconds

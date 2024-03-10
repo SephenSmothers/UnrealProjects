@@ -61,7 +61,8 @@ public: \
 
 
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Both_BP_Code_CharacterAnimation_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__Speed() { return STRUCT_OFFSET(UCharacterAnimation, Speed); }
+	FORCEINLINE static uint32 __PPO__Speed() { return STRUCT_OFFSET(UCharacterAnimation, Speed); } \
+	FORCEINLINE static uint32 __PPO__Direction() { return STRUCT_OFFSET(UCharacterAnimation, Direction); }
 
 
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Both_BP_Code_CharacterAnimation_h_12_PROLOG

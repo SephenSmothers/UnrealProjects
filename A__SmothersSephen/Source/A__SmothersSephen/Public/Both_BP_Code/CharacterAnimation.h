@@ -20,6 +20,6 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)
 	float Speed;
 
-	//UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Default)
-	//float direction;
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Default)
+	float Direction;
 };

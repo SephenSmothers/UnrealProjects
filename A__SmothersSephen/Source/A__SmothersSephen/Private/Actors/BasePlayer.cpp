@@ -25,6 +25,7 @@ void ABasePlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 	//Movement
 	PlayerInputComponent->BindAxis("MoveForward", this, &ABasePlayer::InputAxisMoveForward);
+	PlayerInputComponent->BindAxis("MoveRight", this, &ABasePlayer::InputAxisMoveRight);
 }
 
 void ABasePlayer::InputAxisMoveForward(float AxisValue)
@@ -40,6 +41,5 @@ void ABasePlayer::InputAxisMoveForward(float AxisValue)
 
 void ABasePlayer::InputAxisMoveRight(float AxisValue)
 {
-
-
+	AddMovementInput(FRotationMatrix(FRotator(0.0f, GetControlRotation().Yaw, 0.0f)).GetScaledAxis(EAxis::Y), AxisValue);
 }
