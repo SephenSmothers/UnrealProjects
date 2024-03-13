@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeA__SmothersSephen_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x233710EE,
+				0x6289A5FC,
 				0xA9630731,
 				METADATA_PARAMS(nullptr, 0)
 			};

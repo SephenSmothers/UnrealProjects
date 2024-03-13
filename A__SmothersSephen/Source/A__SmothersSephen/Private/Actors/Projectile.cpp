@@ -4,6 +4,7 @@
 #include "Components/SphereComponent.h"
 #include "Components/MeshComponent.h"
 #include "../../A__SmothersSephen.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 #include "UObject/ConstructorHelpers.h" // Bad Habit
 
 // Sets default values
@@ -15,28 +16,32 @@ AProjectile::AProjectile()
 	SetRootComponent(SphereCollision);
 
 	//This is binding(addDynamic) and creating an event(this, &AProjectile::HandleOnHit); 
-	SphereCollision->OnComponentHit.AddDynamic(this, &AProjectile::HandleOnHit);
+	SphereCollision->OnComponentBeginOverlap.AddDynamic(this, &AProjectile::HandleOnHit);
+	SphereCollision->SetCollisionProfileName("OverlapAllDynamic");
 
 	SphereMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("SphereMesh"));
 	SphereMesh->SetCollisionProfileName("NoCollision");
 	SphereMesh->SetupAttachment(SphereCollision);
 
-
-
 	//Eample Only
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> Asset(TEXT("StaticMesh'/Engine/BasicShapes/Sphere.Sphere'"));
-	SphereMesh->SetStaticMesh(Asset.Object);
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> MeshAsset(TEXT("StaticMesh'/Engine/BasicShapes/Sphere.Sphere'"));
+	SphereMesh->SetStaticMesh(MeshAsset.Object);
 
 	//End Bad Example
 
 
 
+	//Projectile Movement
+	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
+	ProjectileMovement->SetUpdatedComponent(SphereCollision);
+	ProjectileMovement->InitialSpeed = 1900.0f;
+	ProjectileMovement->MaxSpeed = 1900.0f;
+	ProjectileMovement->ProjectileGravityScale = 0.f;
 }
 
-void AProjectile::HandleOnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+void AProjectile::HandleOnHit(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	//Will never get called
-	UE_LOG(Game, Log, TEXT("Hello"));
+	UE_LOG(Game, Log, TEXT("Projectile Collided With: "), *OtherActor->GetName());
 }
 
 // Called when the game starts or when spawned
@@ -45,7 +50,7 @@ void AProjectile::BeginPlay()
 	Super::BeginPlay();
 
 	FTimerHandle timerHandle;
-	GetWorld()->GetTimerManager().SetTimer(timerHandle, this, &AProjectile::K2_DestroyActor, 3.0f);
+	GetWorld()->GetTimerManager().SetTimer(timerHandle, this, &AProjectile::K2_DestroyActor, 3000.0f);
 
 }
 
@@ -55,4 +60,3 @@ void AProjectile::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-
