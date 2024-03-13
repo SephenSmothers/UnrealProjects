@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeA__SmothersSephen_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xF63F0E8C,
-				0x9F30689E,
+				0x233710EE,
+				0xA9630731,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);
