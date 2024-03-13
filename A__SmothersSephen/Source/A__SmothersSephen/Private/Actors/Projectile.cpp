@@ -34,8 +34,8 @@ AProjectile::AProjectile()
 	//Projectile Movement
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
 	ProjectileMovement->SetUpdatedComponent(SphereCollision);
-	ProjectileMovement->InitialSpeed = 1900.0f;
-	ProjectileMovement->MaxSpeed = 1900.0f;
+	ProjectileMovement->InitialSpeed = 0.0f;
+	ProjectileMovement->MaxSpeed = 0.0f;
 	ProjectileMovement->ProjectileGravityScale = 0.f;
 }
 

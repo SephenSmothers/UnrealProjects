@@ -18,6 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_A__SmothersSephen();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
 	void ATestingVariable::StaticRegisterNativesATestingVariable()
 	{
@@ -69,6 +71,10 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EditInstanceOnly_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_EditInstanceOnly;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ClassType_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ClassType;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -153,6 +159,15 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ATestingVariable_Statics::NewProp_EditInstanceOnly = { "EditInstanceOnly", nullptr, (EPropertyFlags)0x0020080000000801, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATestingVariable, EditInstanceOnly), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_ATestingVariable_Statics::NewProp_EditInstanceOnly_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATestingVariable_Statics::NewProp_EditInstanceOnly_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATestingVariable_Statics::NewProp_ClassType_MetaData[] = {
+		{ "Category", "Variable|ReadWrite" },
+		{ "Comment", "// Class reference\n" },
+		{ "ModuleRelativePath", "Public/Testing/TestingVariable.h" },
+		{ "ToolTip", "Class reference" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATestingVariable_Statics::NewProp_ClassType = { "ClassType", nullptr, (EPropertyFlags)0x0024080000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATestingVariable, ClassType), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ATestingVariable_Statics::NewProp_ClassType_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATestingVariable_Statics::NewProp_ClassType_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATestingVariable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_VisibleAnywhere,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_VisibleDefaultsOnly,
@@ -163,6 +178,7 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_EditInstanceOnlyOdd,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_EditDefaultsOnly,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_EditInstanceOnly,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_ClassType,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ATestingVariable_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ATestingVariable>::IsAbstract,
@@ -191,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATestingVariable, 4100983753);
+	IMPLEMENT_CLASS(ATestingVariable, 1817743197);
 	template<> A__SMOTHERSSEPHEN_API UClass* StaticClass<ATestingVariable>()
 	{
 		return ATestingVariable::StaticClass();

@@ -10,6 +10,8 @@ ATestingVariable::ATestingVariable()
 	PrimaryActorTick.bCanEverTick = false;
 	PrimaryActorTick.bStartWithTickEnabled = false;
 
+	ClassType = ATestingVariable::StaticClass();
+
 }
 
 // Called when the game starts or when spawned

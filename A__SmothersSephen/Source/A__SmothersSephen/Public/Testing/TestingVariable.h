@@ -49,6 +49,9 @@ protected:
 	FVector EditInstanceOnly;
 
 
+	// Class reference
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Variable|ReadWrite")
+	TSubclassOf<AActor> ClassType; 
 
 
 
