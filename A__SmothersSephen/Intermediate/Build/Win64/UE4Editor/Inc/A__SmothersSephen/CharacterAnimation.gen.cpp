@@ -19,8 +19,47 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 	ENGINE_API UClass* Z_Construct_UClass_UAnimInstance();
 	UPackage* Z_Construct_UPackage__Script_A__SmothersSephen();
 // End Cross Module References
+	DEFINE_FUNCTION(UCharacterAnimation::execPreviewWindowUpdate)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->PreviewWindowUpdate_Implementation();
+		P_NATIVE_END;
+	}
+	static FName NAME_UCharacterAnimation_PreviewWindowUpdate = FName(TEXT("PreviewWindowUpdate"));
+	void UCharacterAnimation::PreviewWindowUpdate()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UCharacterAnimation_PreviewWindowUpdate),NULL);
+	}
 	void UCharacterAnimation::StaticRegisterNativesUCharacterAnimation()
 	{
+		UClass* Class = UCharacterAnimation::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "PreviewWindowUpdate", &UCharacterAnimation::execPreviewWindowUpdate },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UCharacterAnimation_PreviewWindowUpdate_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UCharacterAnimation_PreviewWindowUpdate_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Both_BP_Code/CharacterAnimation.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UCharacterAnimation_PreviewWindowUpdate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCharacterAnimation, nullptr, "PreviewWindowUpdate", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C080C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UCharacterAnimation_PreviewWindowUpdate_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UCharacterAnimation_PreviewWindowUpdate_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UCharacterAnimation_PreviewWindowUpdate()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UCharacterAnimation_PreviewWindowUpdate_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_UCharacterAnimation_NoRegister()
 	{
@@ -29,6 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 	struct Z_Construct_UClass_UCharacterAnimation_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -47,6 +87,9 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 	UObject* (*const Z_Construct_UClass_UCharacterAnimation_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_UAnimInstance,
 		(UObject* (*)())Z_Construct_UPackage__Script_A__SmothersSephen,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UCharacterAnimation_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UCharacterAnimation_PreviewWindowUpdate, "PreviewWindowUpdate" }, // 3495681267
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCharacterAnimation_Statics::Class_MetaDataParams[] = {
@@ -82,11 +125,11 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 		nullptr,
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_UCharacterAnimation_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_UCharacterAnimation_Statics::PropPointers),
 		0,
 		0x009000A8u,
@@ -101,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UCharacterAnimation, 2838314911);
+	IMPLEMENT_CLASS(UCharacterAnimation, 3250614001);
 	template<> A__SMOTHERSSEPHEN_API UClass* StaticClass<UCharacterAnimation>()
 	{
 		return UCharacterAnimation::StaticClass();

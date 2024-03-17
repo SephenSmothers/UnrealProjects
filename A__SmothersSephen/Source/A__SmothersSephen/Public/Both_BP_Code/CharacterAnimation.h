@@ -22,4 +22,10 @@ protected:
 
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Default)
 	float Direction;
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void PreviewWindowUpdate();
+
+	virtual void  PreviewWindowUpdate_Implementation();
+
 };
