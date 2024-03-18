@@ -16,10 +16,10 @@ ATestingFunctions::ATestingFunctions()
 void ATestingFunctions::BeginPlay()
 {
 	Super::BeginPlay();
-	BlueprintNativeEvent();
+	//BlueprintNativeEvent();
 	UE_LOG(Game, Warning, TEXT("Called First Version"));
 	BlueprintNativeEvent_Implementation();
-	UE_LOG(Game, Warning, TEXT("Begin Play Done"));
+	UE_LOG(Game, Warning, TEXT("Called Second Version"));
 	
 }
 

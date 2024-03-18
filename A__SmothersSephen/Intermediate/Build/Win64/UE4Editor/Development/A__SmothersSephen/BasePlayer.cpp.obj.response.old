@@ -264,11 +264,8 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\winrt"
-/FI"C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\A__SmothersSephenEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\A__SmothersSephenEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\A__SmothersSephenEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
 "C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen\Private\Actors\BasePlayer.cpp"
-/FI"C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\Definitions.A__SmothersSephen.h"
+/FI"C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\Definitions.h"
 /Fo"C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\BasePlayer.cpp.obj"
 /TP
 /GR-

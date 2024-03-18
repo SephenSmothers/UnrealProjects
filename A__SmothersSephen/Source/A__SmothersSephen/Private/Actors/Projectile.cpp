@@ -18,6 +18,7 @@ AProjectile::AProjectile()
 	//This is binding(addDynamic) and creating an event(this, &AProjectile::HandleOnHit); 
 	SphereCollision->OnComponentBeginOverlap.AddDynamic(this, &AProjectile::HandleOnHit);
 	SphereCollision->SetCollisionProfileName("OverlapAllDynamic");
+	SphereCollision->SetWorldScale3D(FVector(0.18f, 0.18f, 0.18f));
 
 	SphereMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("SphereMesh"));
 	SphereMesh->SetCollisionProfileName("NoCollision");
@@ -34,14 +35,14 @@ AProjectile::AProjectile()
 	//Projectile Movement
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
 	ProjectileMovement->SetUpdatedComponent(SphereCollision);
-	ProjectileMovement->InitialSpeed = 0.0f;
-	ProjectileMovement->MaxSpeed = 0.0f;
+	ProjectileMovement->InitialSpeed = 2000.0f;
+	ProjectileMovement->MaxSpeed = 2000.0f;
 	ProjectileMovement->ProjectileGravityScale = 0.f;
 }
 
 void AProjectile::HandleOnHit(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	UE_LOG(Game, Log, TEXT("Projectile Collided With: "), *OtherActor->GetName());
+	UE_LOG(Game, Log, TEXT("Projectile Collided With: %s"), *OtherActor->GetName());
 }
 
 // Called when the game starts or when spawned
@@ -50,7 +51,7 @@ void AProjectile::BeginPlay()
 	Super::BeginPlay();
 
 	FTimerHandle timerHandle;
-	GetWorld()->GetTimerManager().SetTimer(timerHandle, this, &AProjectile::K2_DestroyActor, 3000.0f);
+	GetWorld()->GetTimerManager().SetTimer(timerHandle, this, &AProjectile::K2_DestroyActor, 3.0f);
 
 }
 

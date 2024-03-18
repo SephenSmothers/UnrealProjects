@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "A__SmothersSephen",
-			"Path": "C:\\Users\\sephe\\OneDrive\\Desktop\\Unreal\\UnrealProjects\\A__SmothersSephen\\Source\\A__SmothersSephen.Target.cs",
+			"Path": "C:\\Users\\sephe\\Desktop\\Unreal\\UnrealProjects\\A__SmothersSephen\\Source\\A__SmothersSephen.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "A__SmothersSephenEditor",
-			"Path": "C:\\Users\\sephe\\OneDrive\\Desktop\\Unreal\\UnrealProjects\\A__SmothersSephen\\Source\\A__SmothersSephenEditor.Target.cs",
+			"Path": "C:\\Users\\sephe\\Desktop\\Unreal\\UnrealProjects\\A__SmothersSephen\\Source\\A__SmothersSephenEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

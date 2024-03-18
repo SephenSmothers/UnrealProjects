@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_SpringArm_MetaData[] = {
-		{ "Category", "BasePlayer" },
+		{ "Category", "Components" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Actors/BasePlayer.h" },
 	};
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_SpringArm = { "SpringArm", nullptr, (EPropertyFlags)0x00200800000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABasePlayer, SpringArm), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_SpringArm_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_SpringArm_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_Camera_MetaData[] = {
-		{ "Category", "BasePlayer" },
+		{ "Category", "Components" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Actors/BasePlayer.h" },
 	};
@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABasePlayer, 2024381303);
+	IMPLEMENT_CLASS(ABasePlayer, 2344402497);
 	template<> A__SMOTHERSSEPHEN_API UClass* StaticClass<ABasePlayer>()
 	{
 		return ABasePlayer::StaticClass();

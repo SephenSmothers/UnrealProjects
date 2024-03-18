@@ -15,13 +15,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Both_BP_Code_CharacterAnimation_h_15_SPARSE_DATA
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Both_BP_Code_CharacterAnimation_h_15_RPC_WRAPPERS \
+	virtual void FireAnimation_Implementation(); \
 	virtual void PreviewWindowUpdate_Implementation(); \
  \
+	DECLARE_FUNCTION(execFireAnimation); \
 	DECLARE_FUNCTION(execPreviewWindowUpdate);
 
 
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Both_BP_Code_CharacterAnimation_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execFireAnimation); \
 	DECLARE_FUNCTION(execPreviewWindowUpdate);
 
 
@@ -73,7 +76,10 @@ public: \
 
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Both_BP_Code_CharacterAnimation_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Speed() { return STRUCT_OFFSET(UCharacterAnimation, Speed); } \
-	FORCEINLINE static uint32 __PPO__Direction() { return STRUCT_OFFSET(UCharacterAnimation, Direction); }
+	FORCEINLINE static uint32 __PPO__Direction() { return STRUCT_OFFSET(UCharacterAnimation, Direction); } \
+	FORCEINLINE static uint32 __PPO__DebugFire() { return STRUCT_OFFSET(UCharacterAnimation, DebugFire); } \
+	FORCEINLINE static uint32 __PPO__Sequence() { return STRUCT_OFFSET(UCharacterAnimation, Sequence); } \
+	FORCEINLINE static uint32 __PPO__SlotName() { return STRUCT_OFFSET(UCharacterAnimation, SlotName); }
 
 
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Both_BP_Code_CharacterAnimation_h_12_PROLOG \

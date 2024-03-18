@@ -17,12 +17,14 @@ class A__SMOTHERSSEPHEN_API ABasePlayer : public ABaseCharacter
 private:
 	void InputAxisMoveForward(float AxisValue);
 	void InputAxisMoveRight(float AxisValue);
+	void InputActionAttack();
+
 
 protected:
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	class USpringArmComponent* SpringArm; 
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	class UCameraComponent* Camera;
 
 

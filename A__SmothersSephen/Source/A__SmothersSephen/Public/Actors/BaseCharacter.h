@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Actors/Rifle.h"
+#include "Both_BP_Code/CharacterAnimation.h"
 #include "BaseCharacter.generated.h"
 
 UCLASS(Abstract)
@@ -19,6 +21,19 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	class UChildActorComponent* ChildActorComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Default)
+	TSubclassOf<ARifle> WeaponClass;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)
+	ARifle* Weapon;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)
+	UCharacterAnimation* AnimInstanceCore;
+
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -27,3 +42,8 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 };
+
+
+
+
+
