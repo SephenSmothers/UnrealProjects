@@ -38,6 +38,11 @@ void ATestingFunctions::BlueprintNativeEvent_Implementation()
 //	UE_LOG(Game, Error, TEXT("BlueprintImplementableEvent C++"));
 //}
 
+float ATestingFunctions::PureFunction() const
+{
+	return 5.2f;
+}
+
 // Called every frame
 void ATestingFunctions::Tick(float DeltaTime)
 {

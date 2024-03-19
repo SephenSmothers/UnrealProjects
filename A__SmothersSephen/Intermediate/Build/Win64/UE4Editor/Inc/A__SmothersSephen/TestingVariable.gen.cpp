@@ -13,16 +13,94 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 // Cross Module References
+	A__SMOTHERSSEPHEN_API UFunction* Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature();
+	UPackage* Z_Construct_UPackage__Script_A__SmothersSephen();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	A__SMOTHERSSEPHEN_API UClass* Z_Construct_UClass_ATestingVariable_NoRegister();
 	A__SMOTHERSSEPHEN_API UClass* Z_Construct_UClass_ATestingVariable();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
-	UPackage* Z_Construct_UPackage__Script_A__SmothersSephen();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature_Statics
+	{
+		struct _Script_A__SmothersSephen_eventVariableDelegate_Parms
+		{
+			AActor* OtherActor;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_A__SmothersSephen_eventVariableDelegate_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature_Statics::NewProp_OtherActor,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Testing/TestingVariable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_A__SmothersSephen, nullptr, "VariableDelegate__DelegateSignature", nullptr, nullptr, sizeof(_Script_A__SmothersSephen_eventVariableDelegate_Parms), Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(ATestingVariable::execExampleBoundFunction)
+	{
+		P_GET_OBJECT(AActor,Z_Param_OtherActor);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ExampleBoundFunction(Z_Param_OtherActor);
+		P_NATIVE_END;
+	}
 	void ATestingVariable::StaticRegisterNativesATestingVariable()
 	{
+		UClass* Class = ATestingVariable::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "ExampleBoundFunction", &ATestingVariable::execExampleBoundFunction },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ATestingVariable_ExampleBoundFunction_Statics
+	{
+		struct TestingVariable_eventExampleBoundFunction_Parms
+		{
+			AActor* OtherActor;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ATestingVariable_ExampleBoundFunction_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TestingVariable_eventExampleBoundFunction_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ATestingVariable_ExampleBoundFunction_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATestingVariable_ExampleBoundFunction_Statics::NewProp_OtherActor,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATestingVariable_ExampleBoundFunction_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Testing/TestingVariable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ATestingVariable_ExampleBoundFunction_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATestingVariable, nullptr, "ExampleBoundFunction", nullptr, nullptr, sizeof(TestingVariable_eventExampleBoundFunction_Parms), Z_Construct_UFunction_ATestingVariable_ExampleBoundFunction_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ATestingVariable_ExampleBoundFunction_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATestingVariable_ExampleBoundFunction_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATestingVariable_ExampleBoundFunction_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATestingVariable_ExampleBoundFunction()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATestingVariable_ExampleBoundFunction_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ATestingVariable_NoRegister()
 	{
@@ -31,6 +109,7 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 	struct Z_Construct_UClass_ATestingVariable_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -75,6 +154,10 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ClassType_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ClassType;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OnTestingDelegateVariable_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnTestingDelegateVariable;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -82,6 +165,9 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 	UObject* (*const Z_Construct_UClass_ATestingVariable_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_AActor,
 		(UObject* (*)())Z_Construct_UPackage__Script_A__SmothersSephen,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ATestingVariable_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ATestingVariable_ExampleBoundFunction, "ExampleBoundFunction" }, // 1689207117
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATestingVariable_Statics::Class_MetaDataParams[] = {
@@ -168,6 +254,15 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATestingVariable_Statics::NewProp_ClassType = { "ClassType", nullptr, (EPropertyFlags)0x0024080000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATestingVariable, ClassType), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ATestingVariable_Statics::NewProp_ClassType_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATestingVariable_Statics::NewProp_ClassType_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATestingVariable_Statics::NewProp_OnTestingDelegateVariable_MetaData[] = {
+		{ "Category", "Variable" },
+		{ "Comment", "// Event Dispatcher\n" },
+		{ "ModuleRelativePath", "Public/Testing/TestingVariable.h" },
+		{ "ToolTip", "Event Dispatcher" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_ATestingVariable_Statics::NewProp_OnTestingDelegateVariable = { "OnTestingDelegateVariable", nullptr, (EPropertyFlags)0x0020180010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATestingVariable, OnTestingDelegateVariable), Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_ATestingVariable_Statics::NewProp_OnTestingDelegateVariable_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATestingVariable_Statics::NewProp_OnTestingDelegateVariable_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATestingVariable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_VisibleAnywhere,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_VisibleDefaultsOnly,
@@ -179,6 +274,7 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_EditDefaultsOnly,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_EditInstanceOnly,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_ClassType,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_OnTestingDelegateVariable,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ATestingVariable_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ATestingVariable>::IsAbstract,
@@ -188,11 +284,11 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ATestingVariable_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ATestingVariable_Statics::PropPointers),
 		0,
 		0x009000A5u,
@@ -207,7 +303,7 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATestingVariable, 1817743197);
+	IMPLEMENT_CLASS(ATestingVariable, 3323622792);
 	template<> A__SMOTHERSSEPHEN_API UClass* StaticClass<ATestingVariable>()
 	{
 		return ATestingVariable::StaticClass();

@@ -8,15 +8,37 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef A__SMOTHERSSEPHEN_TestingVariable_generated_h
 #error "TestingVariable.generated.h already included, missing '#pragma once' in TestingVariable.h"
 #endif
 #define A__SMOTHERSSEPHEN_TestingVariable_generated_h
 
-#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_SPARSE_DATA
-#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_RPC_WRAPPERS
-#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_INCLASS_NO_PURE_DECLS \
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_9_DELEGATE \
+struct _Script_A__SmothersSephen_eventVariableDelegate_Parms \
+{ \
+	AActor* OtherActor; \
+}; \
+static inline void FVariableDelegate_DelegateWrapper(const FMulticastScriptDelegate& VariableDelegate, AActor* OtherActor) \
+{ \
+	_Script_A__SmothersSephen_eventVariableDelegate_Parms Parms; \
+	Parms.OtherActor=OtherActor; \
+	VariableDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_SPARSE_DATA
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execExampleBoundFunction);
+
+
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execExampleBoundFunction);
+
+
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATestingVariable(); \
 	friend struct Z_Construct_UClass_ATestingVariable_Statics; \
@@ -25,7 +47,7 @@ public: \
 	DECLARE_SERIALIZER(ATestingVariable)
 
 
-#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_INCLASS \
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesATestingVariable(); \
 	friend struct Z_Construct_UClass_ATestingVariable_Statics; \
@@ -34,7 +56,7 @@ public: \
 	DECLARE_SERIALIZER(ATestingVariable)
 
 
-#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_STANDARD_CONSTRUCTORS \
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATestingVariable(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_ABSTRACT_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATestingVariable) \
@@ -47,7 +69,7 @@ private: \
 public:
 
 
-#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_ENHANCED_CONSTRUCTORS \
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ATestingVariable(ATestingVariable&&); \
@@ -58,7 +80,7 @@ public: \
 	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(ATestingVariable)
 
 
-#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_PRIVATE_PROPERTY_OFFSET \
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__VisibleAnywhere() { return STRUCT_OFFSET(ATestingVariable, VisibleAnywhere); } \
 	FORCEINLINE static uint32 __PPO__VisibleDefaultsOnly() { return STRUCT_OFFSET(ATestingVariable, VisibleDefaultsOnly); } \
 	FORCEINLINE static uint32 __PPO__VisibleInstanceOnlyOdd() { return STRUCT_OFFSET(ATestingVariable, VisibleInstanceOnlyOdd); } \
@@ -68,30 +90,31 @@ public: \
 	FORCEINLINE static uint32 __PPO__EditInstanceOnlyOdd() { return STRUCT_OFFSET(ATestingVariable, EditInstanceOnlyOdd); } \
 	FORCEINLINE static uint32 __PPO__EditDefaultsOnly() { return STRUCT_OFFSET(ATestingVariable, EditDefaultsOnly); } \
 	FORCEINLINE static uint32 __PPO__EditInstanceOnly() { return STRUCT_OFFSET(ATestingVariable, EditInstanceOnly); } \
-	FORCEINLINE static uint32 __PPO__ClassType() { return STRUCT_OFFSET(ATestingVariable, ClassType); }
+	FORCEINLINE static uint32 __PPO__ClassType() { return STRUCT_OFFSET(ATestingVariable, ClassType); } \
+	FORCEINLINE static uint32 __PPO__OnTestingDelegateVariable() { return STRUCT_OFFSET(ATestingVariable, OnTestingDelegateVariable); }
 
 
-#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_9_PROLOG
-#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_GENERATED_BODY_LEGACY \
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_11_PROLOG
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_PRIVATE_PROPERTY_OFFSET \
-	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_SPARSE_DATA \
-	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_RPC_WRAPPERS \
-	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_INCLASS \
-	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_STANDARD_CONSTRUCTORS \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_PRIVATE_PROPERTY_OFFSET \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_SPARSE_DATA \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_RPC_WRAPPERS \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_INCLASS \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_GENERATED_BODY \
+#define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_PRIVATE_PROPERTY_OFFSET \
-	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_SPARSE_DATA \
-	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_INCLASS_NO_PURE_DECLS \
-	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_12_ENHANCED_CONSTRUCTORS \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_PRIVATE_PROPERTY_OFFSET \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_SPARSE_DATA \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_INCLASS_NO_PURE_DECLS \
+	A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

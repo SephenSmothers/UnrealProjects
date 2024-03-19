@@ -2,6 +2,7 @@
 
 
 #include "Testing/TestingVariable.h"
+#include "../../A__SmothersSephen.h"
 
 // Sets default values
 ATestingVariable::ATestingVariable()
@@ -18,7 +19,18 @@ ATestingVariable::ATestingVariable()
 void ATestingVariable::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	// this line is the same thing as bind in the character blueprint
+	// create event uses these two parameters ---> this(object pointer), &ATestingVariable::ExampleBoundFunction(function pointer)
+	OnTestingDelegateVariable.AddDynamic(this, &ATestingVariable::ExampleBoundFunction);
+
+	//this is the same thing we will call in the rifle blueprint
+	OnTestingDelegateVariable.Broadcast(this);
+}
+
+void ATestingVariable::ExampleBoundFunction(AActor* OtherActor)
+{
+
+	UE_LOG(Game, Warning, TEXT("Called Example Bound Function"));
 }
 
 // Called every frame

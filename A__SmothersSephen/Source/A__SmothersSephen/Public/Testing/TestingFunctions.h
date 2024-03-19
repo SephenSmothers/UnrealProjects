@@ -28,6 +28,11 @@ protected:
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
 	void BlueprintNativeEvent();
 
+	//pure
+	UFUNCTION(BlueprintCallable)
+	float PureFunction() const;
+
+
 
 public:	
 	// Called every frame

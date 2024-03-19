@@ -16,9 +16,6 @@ ABaseCharacter::ABaseCharacter()
 	ChildActorComponent = CreateDefaultSubobject<UChildActorComponent>(TEXT("ChildActorComponent"));
 	ChildActorComponent->SetupAttachment(GetMesh(), "PlaceWeaponHere");
 	ChildActorComponent->SetChildActorClass(WeaponClass);
-
-
-	
 }
 
 // Called when the game starts or when spawned
@@ -59,7 +56,6 @@ void ABaseCharacter::Tick(float DeltaTime)
 void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
 }
 
 

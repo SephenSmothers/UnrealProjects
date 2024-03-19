@@ -6,6 +6,8 @@
 #include "GameFramework/Actor.h"
 #include "TestingVariable.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FVariableDelegate, AActor*, OtherActor);
+
 UCLASS(Abstract)
 class A__SMOTHERSSEPHEN_API ATestingVariable : public AActor
 {
@@ -53,7 +55,13 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Variable|ReadWrite")
 	TSubclassOf<AActor> ClassType; 
 
+	// Event Dispatcher
+	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = "Variable")
+	FVariableDelegate OnTestingDelegateVariable; 
 
+private:
+	UFUNCTION()
+	void ExampleBoundFunction(AActor* OtherActor);
 
 public:	
 	// Called every frame
