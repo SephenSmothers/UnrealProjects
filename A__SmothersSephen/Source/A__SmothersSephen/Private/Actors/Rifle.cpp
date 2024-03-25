@@ -5,11 +5,13 @@
 
 //#include "GameFramework/Pawn.h" 
 
+
 // Sets default values
 ARifle::ARifle()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bStartWithTickEnabled = false;
 	SkeletalMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("SkeletalMesh"));
 	SetRootComponent(SkeletalMesh);
 }
@@ -46,7 +48,26 @@ void ARifle::Attack_Implementation()
 	{
 		// Spawn the projectile
 		GetWorld()->SpawnActor<AProjectile>(Projectile, SkeletalMesh->GetSocketTransform("MuzzleFlashSocket").GetLocation(), ParentPawn->GetBaseAimRotation());
+		ActionHappening = true;
+
 	}
+}
+
+bool ARifle::CanShoot_Implementation()
+{
+	if (!ActionHappening && IsOwnerAlive)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+void ARifle::ActionStopped()
+{
+	ActionHappening = false;
 }
 
 

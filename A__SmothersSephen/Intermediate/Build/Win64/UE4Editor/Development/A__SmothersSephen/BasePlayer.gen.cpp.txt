@@ -1,19 +1,19 @@
-C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\Definitions.A__SmothersSephen.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen/Public/Actors/BasePlayer.h
-C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen\Public\Actors/BaseCharacter.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen\Public\Actors/Rifle.h
-C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen\Public\Actors/Projectile.h
-C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\Projectile.generated.h
-C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\Rifle.generated.h
-C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen\Public\Both_BP_Code/CharacterAnimation.h
-C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\CharacterAnimation.generated.h
-C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\BaseCharacter.generated.h
-C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\BasePlayer.generated.h
+C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\Definitions.A__SmothersSephen.h
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen/Public/Actors/BasePlayer.h
+C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen\Public\Actors/BaseCharacter.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen\Public\Actors/Rifle.h
+C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen\Public\Actors/Projectile.h
+C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\Projectile.generated.h
+C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\Rifle.generated.h
+C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen\Public\Both_BP_Code/CharacterAnimation.h
+C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\CharacterAnimation.generated.h
+C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\BaseCharacter.generated.h
+C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\BasePlayer.generated.h

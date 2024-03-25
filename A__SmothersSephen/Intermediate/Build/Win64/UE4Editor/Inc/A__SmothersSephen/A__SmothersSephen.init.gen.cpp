@@ -25,7 +25,7 @@ void EmptyLinkFunctionForGeneratedCodeA__SmothersSephen_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xE5B1E0BC,
+				0xBAAB46B9,
 				0x6D1EFABD,
 				METADATA_PARAMS(nullptr, 0)
 			};

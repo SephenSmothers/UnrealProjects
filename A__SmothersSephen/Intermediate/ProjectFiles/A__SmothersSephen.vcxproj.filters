@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\A__SmothersSephen.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{1B361066-764B-412F-8664-F1F7DB634581}</UniqueIdentifier>
+      <UniqueIdentifier>{8C5BEDD5-8877-4C4E-84F2-ED93CB2AF186}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\A__SmothersSephen.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{BEC93BED-C094-45C1-ADA9-840C50C9A5EE}</UniqueIdentifier>
+      <UniqueIdentifier>{AB8DE160-9E0C-4CC9-8DD2-EFEA9ED685EF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\A__SmothersSephen">
-      <UniqueIdentifier>{ABCE2A7E-17A7-4744-BEEA-E3A906DA7E69}</UniqueIdentifier>
+      <UniqueIdentifier>{BE90367D-140D-4540-8CAD-075FFDA002BC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\A__SmothersSephen\A__SmothersSephen.Build.cs">
       <Filter>Source\A__SmothersSephen</Filter>
@@ -45,10 +45,10 @@
       <Filter>Source\A__SmothersSephen</Filter>
     </ClInclude>
     <Filter Include="Source\A__SmothersSephen\Private">
-      <UniqueIdentifier>{C960A58A-E133-4CB6-B371-DCC9D53DA1CC}</UniqueIdentifier>
+      <UniqueIdentifier>{3C355B7F-11FA-485D-928A-241BEF02D61C}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\A__SmothersSephen\Private\Actors">
-      <UniqueIdentifier>{A22CBBE2-94F9-4C16-AAAD-D87CA4F8E6FB}</UniqueIdentifier>
+      <UniqueIdentifier>{15915190-0A90-450C-A5D8-4CC79316D75E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\A__SmothersSephen\Private\Actors\BaseCharacter.cpp">
       <Filter>Source\A__SmothersSephen\Private\Actors</Filter>
@@ -63,7 +63,7 @@
       <Filter>Source\A__SmothersSephen\Private\Actors</Filter>
     </ClCompile>
     <Filter Include="Source\A__SmothersSephen\Private\Both_BP_Code">
-      <UniqueIdentifier>{22FCA827-6083-4A5A-B032-3D6CA26E000A}</UniqueIdentifier>
+      <UniqueIdentifier>{97F9C645-0508-4B0F-820E-28AD37256BA4}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\A__SmothersSephen\Private\Both_BP_Code\CharacterAnimation.cpp">
       <Filter>Source\A__SmothersSephen\Private\Both_BP_Code</Filter>
@@ -72,7 +72,7 @@
       <Filter>Source\A__SmothersSephen\Private\Both_BP_Code</Filter>
     </ClCompile>
     <Filter Include="Source\A__SmothersSephen\Private\Testing">
-      <UniqueIdentifier>{E14C724C-BB98-4156-916E-D0E526881326}</UniqueIdentifier>
+      <UniqueIdentifier>{F2F8633F-A063-4807-BF66-73A61335B559}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\A__SmothersSephen\Private\Testing\TestingDefaultPawn.cpp">
       <Filter>Source\A__SmothersSephen\Private\Testing</Filter>
@@ -84,10 +84,10 @@
       <Filter>Source\A__SmothersSephen\Private\Testing</Filter>
     </ClCompile>
     <Filter Include="Source\A__SmothersSephen\Public">
-      <UniqueIdentifier>{2D742490-7673-41AE-AE8E-3E9DF1F38857}</UniqueIdentifier>
+      <UniqueIdentifier>{7EE3A41D-B494-4423-9051-2EC0E19D0BD9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\A__SmothersSephen\Public\Actors">
-      <UniqueIdentifier>{D1F38277-9D62-47D2-B7C4-F95A3FA75008}</UniqueIdentifier>
+      <UniqueIdentifier>{2C2FE1C7-3357-4CB7-BCDB-75BB88A4175A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\A__SmothersSephen\Public\Actors\BaseCharacter.h">
       <Filter>Source\A__SmothersSephen\Public\Actors</Filter>
@@ -102,7 +102,7 @@
       <Filter>Source\A__SmothersSephen\Public\Actors</Filter>
     </ClInclude>
     <Filter Include="Source\A__SmothersSephen\Public\Both_BP_Code">
-      <UniqueIdentifier>{75B73326-5988-42FB-A2C7-A0D2377AD445}</UniqueIdentifier>
+      <UniqueIdentifier>{EBC657F6-26E1-4814-845E-4F1D180A0D5D}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\A__SmothersSephen\Public\Both_BP_Code\CharacterAnimation.h">
       <Filter>Source\A__SmothersSephen\Public\Both_BP_Code</Filter>
@@ -111,7 +111,7 @@
       <Filter>Source\A__SmothersSephen\Public\Both_BP_Code</Filter>
     </ClInclude>
     <Filter Include="Source\A__SmothersSephen\Public\Testing">
-      <UniqueIdentifier>{787D965A-5252-4F8E-B916-1BA6616311CB}</UniqueIdentifier>
+      <UniqueIdentifier>{303DF098-CC49-40C8-879E-3D45B4DAB6C8}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\A__SmothersSephen\Public\Testing\TestingDefaultPawn.h">
       <Filter>Source\A__SmothersSephen\Public\Testing</Filter>

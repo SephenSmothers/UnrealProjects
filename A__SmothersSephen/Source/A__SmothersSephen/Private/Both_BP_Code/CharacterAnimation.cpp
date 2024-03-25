@@ -5,6 +5,13 @@
 #include "Animation/AnimSequenceBase.h"
 #include "../../A__SmothersSephen.h"
 
+
+//UCharacterAnimation::UCharacterAnimation()
+//{
+//	DeadSequenceArray.Add(HurtSequence);
+//	DeadSequenceArray.Add(DeadSequence);
+//}
+
 void UCharacterAnimation::NativeUpdateAnimation(float DeltaSeconds)
 {
 	Super::NativeUpdateAnimation(DeltaSeconds);
@@ -25,6 +32,16 @@ void UCharacterAnimation::NativeUpdateAnimation(float DeltaSeconds)
 			DebugFire = false;
 		}
 
+		if (DebugHurt)
+		{
+			HurtAnimation(0);
+			DebugHurt = false;
+		}
+		else if(DebugDead)
+		{
+			DeadAnimation(0);
+			DebugDead = false;
+		}
 	}
 	else
 	{
@@ -43,7 +60,24 @@ void UCharacterAnimation::FireAnimation_Implementation()
 	{
 		UE_LOG(Game, Warning, TEXT("Failed to load Fire_Ironsights animation montage!"));
 	}
+}
 
+void UCharacterAnimation::HurtAnimation_Implementation(float ratio)
+{
+	if (HurtSequence)
+	{
+		PlaySlotAnimationAsDynamicMontage(HurtSequence, SlotName);
+	}
+	else
+	{
+		UE_LOG(Game, Warning, TEXT("Failed to load Hurt_Ironsights animation montage!"));
+	}
+}
+
+
+void UCharacterAnimation::DeadAnimation_Implementation(float ratio)
+{
+	DeadSequence = DeadSequenceArray[FMath::RandRange(0, DeadSequenceArray.Num() - 1)];
 }
 
 void UCharacterAnimation::PreviewWindowUpdate_Implementation()

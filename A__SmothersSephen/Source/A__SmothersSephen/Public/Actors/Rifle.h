@@ -21,6 +21,12 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Default)
+	bool ActionHappening;
+
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Default)
+	bool IsOwnerAlive;
+
 	// Sets default values for this actor's properties
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)
 	class APawn* ParentPawn;
@@ -30,6 +36,16 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)
 	TSubclassOf<AProjectile> Projectile;
+
+
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
+	bool CanShoot();
+	virtual bool  CanShoot_Implementation();
+
+	void ActionStopped();
+
+
+
 
 	/*UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)
 	class AProjectile* Projectile;*/

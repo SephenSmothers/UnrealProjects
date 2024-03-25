@@ -60,7 +60,8 @@ public: \
 
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BasePlayer_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__SpringArm() { return STRUCT_OFFSET(ABasePlayer, SpringArm); } \
-	FORCEINLINE static uint32 __PPO__Camera() { return STRUCT_OFFSET(ABasePlayer, Camera); }
+	FORCEINLINE static uint32 __PPO__Camera() { return STRUCT_OFFSET(ABasePlayer, Camera); } \
+	FORCEINLINE static uint32 __PPO__PlayerController() { return STRUCT_OFFSET(ABasePlayer, PlayerController); }
 
 
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BasePlayer_h_12_PROLOG

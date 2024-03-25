@@ -6,6 +6,23 @@
 #include "Camera/CameraComponent.h"
 #include "Actors/Rifle.h"
 
+void ABasePlayer::BeginPlay()
+{
+	Super::BeginPlay();
+
+	auto pController = Cast<APlayerController>(GetParentActor());
+
+	if (PlayerController)
+	{
+		PlayerController = pController;
+		
+	}
+	else
+	{
+		Destroy();
+	}
+}
+
 ABasePlayer::ABasePlayer()
 {
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
@@ -53,6 +70,8 @@ void ABasePlayer::InputActionAttack()
 		AnimInstanceCore->FireAnimation();
 	}
 }
+
+
 
 
 
