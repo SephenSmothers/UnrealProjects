@@ -13,6 +13,12 @@ ATestingVariable::ATestingVariable()
 
 	ClassType = ATestingVariable::StaticClass();
 
+	ValueArray.Add(3);
+	ValueArray.Add(4);
+
+	PointerArray.Add(this);
+	PointerArray.Add(nullptr);
+
 }
 
 // Called when the game starts or when spawned

@@ -91,7 +91,9 @@ public: \
 	FORCEINLINE static uint32 __PPO__EditDefaultsOnly() { return STRUCT_OFFSET(ATestingVariable, EditDefaultsOnly); } \
 	FORCEINLINE static uint32 __PPO__EditInstanceOnly() { return STRUCT_OFFSET(ATestingVariable, EditInstanceOnly); } \
 	FORCEINLINE static uint32 __PPO__ClassType() { return STRUCT_OFFSET(ATestingVariable, ClassType); } \
-	FORCEINLINE static uint32 __PPO__OnTestingDelegateVariable() { return STRUCT_OFFSET(ATestingVariable, OnTestingDelegateVariable); }
+	FORCEINLINE static uint32 __PPO__OnTestingDelegateVariable() { return STRUCT_OFFSET(ATestingVariable, OnTestingDelegateVariable); } \
+	FORCEINLINE static uint32 __PPO__ValueArray() { return STRUCT_OFFSET(ATestingVariable, ValueArray); } \
+	FORCEINLINE static uint32 __PPO__PointerArray() { return STRUCT_OFFSET(ATestingVariable, PointerArray); }
 
 
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Testing_TestingVariable_h_11_PROLOG

@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature_Statics
 	{
@@ -158,6 +159,16 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OnTestingDelegateVariable_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnTestingDelegateVariable;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ValueArray_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ValueArray_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ValueArray;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PointerArray_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PointerArray_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_PointerArray;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -263,6 +274,24 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_ATestingVariable_Statics::NewProp_OnTestingDelegateVariable = { "OnTestingDelegateVariable", nullptr, (EPropertyFlags)0x0020180010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATestingVariable, OnTestingDelegateVariable), Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_ATestingVariable_Statics::NewProp_OnTestingDelegateVariable_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATestingVariable_Statics::NewProp_OnTestingDelegateVariable_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ATestingVariable_Statics::NewProp_ValueArray_Inner = { "ValueArray", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATestingVariable_Statics::NewProp_ValueArray_MetaData[] = {
+		{ "Category", "Variable|Array" },
+		{ "Comment", "//Array\n" },
+		{ "ModuleRelativePath", "Public/Testing/TestingVariable.h" },
+		{ "ToolTip", "Array" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ATestingVariable_Statics::NewProp_ValueArray = { "ValueArray", nullptr, (EPropertyFlags)0x0020080000010015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATestingVariable, ValueArray), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_ATestingVariable_Statics::NewProp_ValueArray_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATestingVariable_Statics::NewProp_ValueArray_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATestingVariable_Statics::NewProp_PointerArray_Inner = { "PointerArray", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATestingVariable_Statics::NewProp_PointerArray_MetaData[] = {
+		{ "Category", "Variable|Array" },
+		{ "ModuleRelativePath", "Public/Testing/TestingVariable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ATestingVariable_Statics::NewProp_PointerArray = { "PointerArray", nullptr, (EPropertyFlags)0x0020080000010015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATestingVariable, PointerArray), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_ATestingVariable_Statics::NewProp_PointerArray_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATestingVariable_Statics::NewProp_PointerArray_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATestingVariable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_VisibleAnywhere,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_VisibleDefaultsOnly,
@@ -275,6 +304,10 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_EditInstanceOnly,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_ClassType,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_OnTestingDelegateVariable,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_ValueArray_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_ValueArray,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_PointerArray_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATestingVariable_Statics::NewProp_PointerArray,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ATestingVariable_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ATestingVariable>::IsAbstract,
@@ -303,7 +336,7 @@ void EmptyLinkFunctionForGeneratedCodeTestingVariable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATestingVariable, 3323622792);
+	IMPLEMENT_CLASS(ATestingVariable, 905190857);
 	template<> A__SMOTHERSSEPHEN_API UClass* StaticClass<ATestingVariable>()
 	{
 		return ATestingVariable::StaticClass();

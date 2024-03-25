@@ -33,6 +33,10 @@ protected:
 	float PureFunction() const;
 
 
+	//Multiple Returns
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
+	bool MultipleReturns(AActor* Actor1, FRotator Rotation, AActor*& Actor2, int32& Index);
+
 
 public:	
 	// Called every frame

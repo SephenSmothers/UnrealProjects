@@ -59,6 +59,14 @@ protected:
 	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = "Variable")
 	FVariableDelegate OnTestingDelegateVariable; 
 
+
+	//Array
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Variable|Array")
+	TArray<int32> ValueArray;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Variable|Array")
+	TArray<UObject*> PointerArray;
+
 private:
 	UFUNCTION()
 	void ExampleBoundFunction(AActor* OtherActor);
