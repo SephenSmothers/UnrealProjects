@@ -37,10 +37,9 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)
 	TSubclassOf<AProjectile> Projectile;
 
-
-	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
-	bool CanShoot();
-	virtual bool  CanShoot_Implementation();
+	UFUNCTION(BlueprintCallable)
+	bool CanShoot() const;
+	//virtual bool  CanShoot_Implementation();
 
 	void ActionStopped();
 

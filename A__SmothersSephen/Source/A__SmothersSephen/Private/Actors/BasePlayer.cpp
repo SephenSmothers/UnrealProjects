@@ -5,23 +5,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Actors/Rifle.h"
-
-void ABasePlayer::BeginPlay()
-{
-	Super::BeginPlay();
-
-	auto pController = Cast<APlayerController>(GetParentActor());
-
-	if (PlayerController)
-	{
-		PlayerController = pController;
-		
-	}
-	else
-	{
-		Destroy();
-	}
-}
+#include "Components/HealthComponent.h"
 
 ABasePlayer::ABasePlayer()
 {
@@ -32,6 +16,24 @@ ABasePlayer::ABasePlayer()
 
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	Camera->SetupAttachment(SpringArm /*, Only needed for objects attached to a socket*/);
+
+	HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("HealthComponent"));
+}
+
+void ABasePlayer::BeginPlay()
+{
+	Super::BeginPlay();
+
+	auto pController = Cast<APlayerController>(GetController());
+
+	if (PlayerController)
+	{
+		PlayerController = pController;
+	}
+	else
+	{
+		Destroy();
+	}
 }
 
 void ABasePlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

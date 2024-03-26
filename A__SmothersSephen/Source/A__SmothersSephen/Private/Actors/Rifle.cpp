@@ -28,7 +28,7 @@ void ARifle::BeginPlay()
 	if (ParentPawn)
 	{
 		//isValid
-		
+
 	}
 	else
 	{
@@ -47,15 +47,20 @@ void ARifle::Attack_Implementation()
 	if (SkeletalMesh && SkeletalMesh->DoesSocketExist("MuzzleFlashSocket"))
 	{
 		// Spawn the projectile
-		GetWorld()->SpawnActor<AProjectile>(Projectile, SkeletalMesh->GetSocketTransform("MuzzleFlashSocket").GetLocation(), ParentPawn->GetBaseAimRotation());
-		ActionHappening = true;
+		if (CanShoot() == true)
+		{
+			GetWorld()->SpawnActor<AProjectile>(Projectile, SkeletalMesh->GetSocketTransform("MuzzleFlashSocket").GetLocation(), ParentPawn->GetBaseAimRotation());
+			ActionHappening = true;
 
+			FTimerHandle fTimer;
+			GetWorld()->GetTimerManager().SetTimer(fTimer, this, &ARifle::ActionStopped, 1.0f, false);
+		}
 	}
 }
 
-bool ARifle::CanShoot_Implementation()
+bool ARifle::CanShoot() const
 {
-	if (!ActionHappening && IsOwnerAlive)
+	if (ActionHappening == false)
 	{
 		return true;
 	}
