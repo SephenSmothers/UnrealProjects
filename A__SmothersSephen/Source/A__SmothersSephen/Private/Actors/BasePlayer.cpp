@@ -6,6 +6,7 @@
 #include "Camera/CameraComponent.h"
 #include "Actors/Rifle.h"
 #include "Components/HealthComponent.h"
+#include "Both_BP_Code/GameHUD.h"
 
 ABasePlayer::ABasePlayer()
 {
@@ -26,9 +27,19 @@ void ABasePlayer::BeginPlay()
 
 	auto pController = Cast<APlayerController>(GetController());
 
-	if (PlayerController)
+	if (pController)
 	{
 		PlayerController = pController;
+
+		UGameHUD* hud = CreateWidget<UGameHUD>(PlayerController, HUDClassType);
+
+		if (hud) 
+		{
+			hud->AddToViewport();
+
+			HealthComponent->OnHurt.AddDynamic(hud, &UGameHUD::SetHealthComponent);
+			HealthComponent->OnDead.AddDynamic(hud, &UGameHUD::SetHealthComponentDead);
+		}
 	}
 	else
 	{

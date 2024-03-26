@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\sephe\\OneDrive\\Desktop\\Unreal\\UnrealProjects\\A__SmothersSephen\\Source\\A__SmothersSephen\\A__SmothersSephen.Build.cs",
-		"C:\\Users\\sephe\\OneDrive\\Desktop\\Unreal\\UnrealProjects\\A__SmothersSephen\\Source\\A__SmothersSephen.Target.cs",
-		"C:\\Users\\sephe\\OneDrive\\Desktop\\Unreal\\UnrealProjects\\A__SmothersSephen\\Source\\A__SmothersSephenEditor.Target.cs"
+		"C:\\Users\\sephe\\Desktop\\Unreal\\UnrealProjects\\A__SmothersSephen\\Source\\A__SmothersSephen\\A__SmothersSephen.Build.cs",
+		"C:\\Users\\sephe\\Desktop\\Unreal\\UnrealProjects\\A__SmothersSephen\\Source\\A__SmothersSephen.Target.cs",
+		"C:\\Users\\sephe\\Desktop\\Unreal\\UnrealProjects\\A__SmothersSephen\\Source\\A__SmothersSephenEditor.Target.cs"
 	],
 	"EngineVersion": "4.27.2"
 }
