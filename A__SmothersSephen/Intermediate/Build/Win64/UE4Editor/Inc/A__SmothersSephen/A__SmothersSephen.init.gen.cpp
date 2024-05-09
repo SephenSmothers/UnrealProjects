@@ -27,8 +27,8 @@ void EmptyLinkFunctionForGeneratedCodeA__SmothersSephen_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xABF5BC30,
-				0x4FEBEBCC,
+				0xE2F8F35E,
+				0x3B665D83,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

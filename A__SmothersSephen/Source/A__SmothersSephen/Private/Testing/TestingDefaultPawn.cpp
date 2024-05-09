@@ -42,6 +42,24 @@ void ATestingDefaultPawn::BeginPlay()
 	}
 
 	UE_LOG(Game, Error, TEXT("Numbers are %s"), *GetVelocity().ToString());
+
+	for (TActorIterator<ATestingActorWithInterface> itr(GetWorld()); itr; ++itr)
+	{
+		//so this could be an actor cast into a function
+		Actor = *itr;
+		UTestingInterface* U = Cast<UTestingInterface>(Actor);
+		if (U)
+		{
+			UE_LOG(Game, Warning, TEXT("I AM U"))
+		}
+
+		ITestingInterface* I = Cast<ITestingInterface>(Actor);
+		if (I) 
+		{
+			I->BluePrintCallable();
+			UE_LOG(Game, Warning, TEXT("I AM I"))
+		}
+	}
 	
 }
 
