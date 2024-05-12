@@ -5,13 +5,13 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Actors/Rifle.h"
-#include "Components/HealthComponent.h"
 #include "Both_BP_Code/GameHUD.h"
+
 
 ABasePlayer::ABasePlayer()
 {
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
-	SpringArm->SetRelativeLocation(FVector(0.0f,0.0f,60.0f));
+	SpringArm->SetRelativeLocation(FVector(30.0f,50.0f,60.0f));
 	SpringArm->SetupAttachment(GetRootComponent() /*, Only needed for objects attached to a socket*/);
 	SpringArm->bUsePawnControlRotation = true;
 
@@ -25,11 +25,11 @@ void ABasePlayer::BeginPlay()
 {
 	Super::BeginPlay();
 
-	auto pController = Cast<APlayerController>(GetController());
+	PlayerController = Cast<APlayerController>(GetController());
 
-	if (pController)
+	if (PlayerController)
 	{
-		PlayerController = pController;
+		//PlayerController = pController;
 
 		UGameHUD* hud = CreateWidget<UGameHUD>(PlayerController, HUDClassType);
 
@@ -78,10 +78,16 @@ void ABasePlayer::InputActionAttack()
 		Weapon->Attack();
 	}
 
-	if (AnimInstanceCore)
-	{
-		AnimInstanceCore->FireAnimation();
-	}
+	//if (AnimInstanceCore)
+	//{
+	//	AnimInstanceCore->FireAnimation();
+	//}
+}
+
+void ABasePlayer::HandleDeath(float ratio)
+{
+	Super::HandleDeath(ratio);
+	DisableInput(PlayerController);
 }
 
 

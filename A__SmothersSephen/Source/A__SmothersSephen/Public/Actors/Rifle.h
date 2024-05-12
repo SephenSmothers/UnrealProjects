@@ -7,6 +7,9 @@
 #include "Actors/Projectile.h"
 #include "Rifle.generated.h"
 
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FRifleFire);
+
 UCLASS()
 class A__SMOTHERSSEPHEN_API ARifle : public AActor
 {
@@ -41,6 +44,8 @@ protected:
 	bool CanShoot() const;
 	//virtual bool  CanShoot_Implementation();
 
+	
+
 	void ActionStopped();
 
 
@@ -61,8 +66,11 @@ public:
 
 	virtual void  Attack_Implementation();
 
+	UFUNCTION()
+	void SetOwnerAlive(bool alive);
 
-
+	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = "Variable")
+	FRifleFire OnRifleFire;
 };
 
 

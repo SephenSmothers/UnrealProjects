@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "Actors/Rifle.h"
 #include "Both_BP_Code/CharacterAnimation.h"
+#include "Components/HealthComponent.h"
 #include "BaseCharacter.generated.h"
 
 UCLASS(Abstract)
@@ -32,6 +33,12 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)
 	UCharacterAnimation* AnimInstanceCore;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
+	class UHealthComponent* HealthComponent;
+
+	UFUNCTION()
+	virtual void HandleDeath(float ratio);
 
 
 public:	

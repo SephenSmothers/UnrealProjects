@@ -21,7 +21,7 @@ void ARifle::BeginPlay()
 {
 	Super::BeginPlay();
 
-
+	IsOwnerAlive = true;
 	ParentPawn = Cast<APawn>(GetParentActor());
 
 
@@ -54,13 +54,15 @@ void ARifle::Attack_Implementation()
 
 			FTimerHandle fTimer;
 			GetWorld()->GetTimerManager().SetTimer(fTimer, this, &ARifle::ActionStopped, 1.0f, false);
+
+			OnRifleFire.Broadcast();
 		}
 	}
 }
 
 bool ARifle::CanShoot() const
 {
-	if (ActionHappening == false)
+	if (ActionHappening == false && IsOwnerAlive == true)
 	{
 		return true;
 	}
@@ -68,6 +70,11 @@ bool ARifle::CanShoot() const
 	{
 		return false;
 	}
+}
+
+void ARifle::SetOwnerAlive(bool alive)
+{
+	IsOwnerAlive = alive;
 }
 
 void ARifle::ActionStopped()

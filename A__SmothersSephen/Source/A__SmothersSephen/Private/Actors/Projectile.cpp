@@ -6,6 +6,7 @@
 #include "../../A__SmothersSephen.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "UObject/ConstructorHelpers.h" // Bad Habit
+#include <Kismet/GameplayStatics.h>
 
 // Sets default values
 AProjectile::AProjectile()
@@ -23,6 +24,8 @@ AProjectile::AProjectile()
 	SphereMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("SphereMesh"));
 	SphereMesh->SetCollisionProfileName("NoCollision");
 	SphereMesh->SetupAttachment(SphereCollision);
+
+	Damage = 1.0f;
 
 	//Eample Only
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> MeshAsset(TEXT("StaticMesh'/Engine/BasicShapes/Sphere.Sphere'"));
@@ -43,6 +46,8 @@ AProjectile::AProjectile()
 void AProjectile::HandleOnHit(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	UE_LOG(Game, Log, TEXT("Projectile Collided With: %s"), *OtherActor->GetName());
+	UGameplayStatics::ApplyDamage(OtherActor, Damage, OwnerController, this, NULL);
+	//OtherActor->TakeDamage(Damage, )
 	Destroy();
 }
 
@@ -53,7 +58,7 @@ void AProjectile::BeginPlay()
 
 	FTimerHandle timerHandle;
 	GetWorld()->GetTimerManager().SetTimer(timerHandle, this, &AProjectile::K2_DestroyActor, 3.0f);
-
+	OwnerController = Cast<AController>(GetOwner());
 }
 
 // Called every frame

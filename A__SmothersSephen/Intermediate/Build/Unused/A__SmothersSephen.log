@@ -1,58 +1,17 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sephe\Desktop\Unreal\UnrealProjects).
-  Invalidating makefile for A__SmothersSephenEditor (BasePlayer.cpp.obj.response modified)
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0001.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0001.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0002.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0002.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0003.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0003.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0006.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0006.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0007.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0007.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0008.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0008.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0203.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0203.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0443.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-0443.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-2051.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-2051.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-2069.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-2069.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-2707.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-2707.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-3014.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-3014.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-6699.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-6699.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-8043.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-8043.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-9553.dll
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Binaries\Win64\UE4Editor-A__SmothersSephen-9553.pdb
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0001.lib
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0002.lib
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0003.lib
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0006.lib
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0007.lib
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0008.lib
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0203.lib
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0443.lib
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-2051.lib
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-2069.lib
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-2707.lib
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-3014.lib
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-6699.lib
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-8043.lib
-  Deleted hot-reload file: C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-9553.lib
+  Invalidating makefile for A__SmothersSephenEditor (BaseCharacter.cpp.obj.response modified)
   Building A__SmothersSephenEditor...
   Using Visual Studio 2022 14.39.33521 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519) and Windows 10.0.22000.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 16 processes...
-    [1/4] BasePlayer.cpp
-    [2/4] UE4Editor-A__SmothersSephen.lib
-       Creating library C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen.lib and object C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen.exp
-    [3/4] UE4Editor-A__SmothersSephen.dll
-       Creating library C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen.suppressed.lib and object C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen.suppressed.exp
-    [4/4] A__SmothersSephenEditor.target
-  Total time in Parallel executor: 8.98 seconds
-  Total execution time: 10.59 seconds
+  Building 8 actions with 16 processes...
+    [1/8] A__SmothersSephen.init.gen.cpp
+    [2/8] BaseCharacter.gen.cpp
+    [3/8] BasePlayer.gen.cpp
+    [4/8] BaseCharacter.cpp
+    [5/8] BasePlayer.cpp
+    [6/8] UE4Editor-A__SmothersSephen-0006.lib
+       Creating library C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0006.lib and object C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0006.exp
+    [7/8] UE4Editor-A__SmothersSephen-0006.dll
+       Creating library C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0006.suppressed.lib and object C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0006.suppressed.exp
+    [8/8] A__SmothersSephenEditor.target
+  Total time in Parallel executor: 3.37 seconds
+  Total execution time: 5.02 seconds
