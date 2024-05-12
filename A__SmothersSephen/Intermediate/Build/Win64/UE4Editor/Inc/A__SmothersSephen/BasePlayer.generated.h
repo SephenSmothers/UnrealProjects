@@ -62,7 +62,6 @@ public: \
 	FORCEINLINE static uint32 __PPO__SpringArm() { return STRUCT_OFFSET(ABasePlayer, SpringArm); } \
 	FORCEINLINE static uint32 __PPO__Camera() { return STRUCT_OFFSET(ABasePlayer, Camera); } \
 	FORCEINLINE static uint32 __PPO__PlayerController() { return STRUCT_OFFSET(ABasePlayer, PlayerController); } \
-	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(ABasePlayer, HealthComponent); } \
 	FORCEINLINE static uint32 __PPO__HUDClassType() { return STRUCT_OFFSET(ABasePlayer, HUDClassType); }
 
 

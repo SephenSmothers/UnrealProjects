@@ -33,12 +33,14 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Default)
 	APlayerController* PlayerController;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
-	class UHealthComponent* HealthComponent;
+	/*UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	class UHealthComponent* HealthComponent;*/
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)
 	TSubclassOf<class UGameHUD> HUDClassType;
 
+
+	virtual void HandleDeath(float ratio) override;
 
 public:
 	ABasePlayer();

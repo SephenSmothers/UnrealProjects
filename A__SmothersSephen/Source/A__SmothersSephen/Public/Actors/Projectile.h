@@ -29,6 +29,13 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	class UProjectileMovementComponent* ProjectileMovement;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)
+	float Damage;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)
+	AController* OwnerController; 
+
+
 public:	
 	// Sets default values for this actor's properties
 	AProjectile();

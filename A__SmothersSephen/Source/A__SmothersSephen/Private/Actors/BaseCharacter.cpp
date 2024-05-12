@@ -3,6 +3,7 @@
 
 #include "Actors/BaseCharacter.h"
 #include "../../A__SmothersSephen.h"
+#include "Components/HealthComponent.h"
 
 // Sets default values
 ABaseCharacter::ABaseCharacter()
@@ -23,26 +24,33 @@ void ABaseCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	auto rifle = Cast<ARifle>(ChildActorComponent->GetChildActor());
-	auto anim = Cast<UCharacterAnimation>(GetMesh()->GetAnimInstance());
+	Weapon = Cast<ARifle>(ChildActorComponent->GetChildActor());
+	AnimInstanceCore = Cast<UCharacterAnimation>(GetMesh()->GetAnimInstance());
 
-	if (rifle)
-	{
-		Weapon = rifle;
-	}
-	else
+	if (Weapon == nullptr)
 	{
 		UE_LOG(Game, Warning, TEXT("Failed to load BaseCharacter Weapon!"));
+		Destroy();
 	}
 	
-	if (anim)
+	if (AnimInstanceCore != nullptr)
 	{
-		AnimInstanceCore = anim;
+		Weapon->OnRifleFire.AddDynamic(AnimInstanceCore, &UCharacterAnimation::FireAnimation);
+		HealthComponent->OnHurt.AddDynamic(AnimInstanceCore, &UCharacterAnimation::HurtAnimation);
+		HealthComponent->OnDead.AddDynamic(AnimInstanceCore, &UCharacterAnimation::DeadAnimation);
+		HealthComponent->OnDead.AddDynamic(this, &ABaseCharacter::HandleDeath);
 	}
 	else
 	{
 		UE_LOG(Game, Warning, TEXT("Failed to load BaseCharacter Anim Instance!"));
 	}
+}
+
+void ABaseCharacter::HandleDeath(float ratio)
+{
+	SetActorEnableCollision(false);
+	Weapon->SetOwnerAlive(false);
+	UE_LOG(Game, Warning, TEXT("Someone Died"));
 }
 
 // Called every frame
