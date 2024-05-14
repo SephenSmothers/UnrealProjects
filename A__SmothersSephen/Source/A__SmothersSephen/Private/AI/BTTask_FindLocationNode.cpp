@@ -5,6 +5,7 @@
 #include "BehaviorTree/BehaviorTreeTypes.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "NavigationSystem.h"
+#include "AIController.h"
 //#include "Actors/AIC_CoreAIController.h"
 
 //void UBTTask_FindLocationNode::ReceiveExecuteAI(AAIController& owner, APawn& pawn)
@@ -14,14 +15,15 @@
 
 EBTNodeResult::Type UBTTask_FindLocationNode::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
-	UNavigationSystemV1* navigation;
+	UNavigationSystemV1* navigation = nullptr;
 
-	OwnerComp.GetAIOwner();
+	//OwnerComp.GetAIOwner();
 
+	//OwnerComp.GetBlackboardComponent()->SetValueAsVector();
 
 	OwnerComp.GetBlackboardComponent()->SetValueAsVector(LocationKey.SelectedKeyName, 
 		navigation->GetRandomPointInNavigableRadius(GetWorld(), 
-			OwnerComp.GetAIOwner()->GetPawn()) );
+			OwnerComp.GetAIOwner()->GetPawn()->GetActorLocation(), Radius));
 
 	//GetRandomPointInNavigableRadius()
 	FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);

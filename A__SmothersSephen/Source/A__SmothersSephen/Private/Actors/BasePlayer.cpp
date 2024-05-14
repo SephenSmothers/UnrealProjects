@@ -10,6 +10,8 @@
 
 ABasePlayer::ABasePlayer()
 {
+	//Super::ABaseCharacter(); 
+
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
 	SpringArm->SetRelativeLocation(FVector(30.0f,50.0f,60.0f));
 	SpringArm->SetupAttachment(GetRootComponent() /*, Only needed for objects attached to a socket*/);
@@ -18,7 +20,7 @@ ABasePlayer::ABasePlayer()
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	Camera->SetupAttachment(SpringArm /*, Only needed for objects attached to a socket*/);
 
-	HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("HealthComponent"));
+	//HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("HealthComponent"));
 }
 
 void ABasePlayer::BeginPlay()

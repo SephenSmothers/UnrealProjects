@@ -17,6 +17,8 @@ ABaseCharacter::ABaseCharacter()
 	ChildActorComponent = CreateDefaultSubobject<UChildActorComponent>(TEXT("ChildActorComponent"));
 	ChildActorComponent->SetupAttachment(GetMesh(), "PlaceWeaponHere");
 	ChildActorComponent->SetChildActorClass(WeaponClass);
+
+	HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("HealthComponent"));
 }
 
 // Called when the game starts or when spawned

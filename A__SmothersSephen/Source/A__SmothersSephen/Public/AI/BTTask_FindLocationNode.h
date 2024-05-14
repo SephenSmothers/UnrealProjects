@@ -16,9 +16,6 @@ class A__SMOTHERSSEPHEN_API UBTTask_FindLocationNode : public UBTTaskNode
 
 public:
 
-	/*UFUNCTION(BlueprintCallable)
-	void ReceiveExecuteAI(class AAIController& owner, APawn& pawn);*/
-
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 
 private:
@@ -27,6 +24,6 @@ private:
 	float Radius;
 
 	UPROPERTY(EditInstanceOnly, Category = "Variables");
-	class FBlackboardKeySelector LocationKey;
+	struct FBlackboardKeySelector LocationKey;
 	
 };

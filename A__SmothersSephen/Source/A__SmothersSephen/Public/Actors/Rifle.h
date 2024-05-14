@@ -71,6 +71,11 @@ public:
 
 	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = "Variable")
 	FRifleFire OnRifleFire;
+
+	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = "Variable")
+	FRifleFire OnWeaponStopped;
+
+
 };
 
 

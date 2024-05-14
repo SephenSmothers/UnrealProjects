@@ -25,7 +25,7 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	class UChildActorComponent* ChildActorComponent;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Default)
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)
 	TSubclassOf<ARifle> WeaponClass;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)

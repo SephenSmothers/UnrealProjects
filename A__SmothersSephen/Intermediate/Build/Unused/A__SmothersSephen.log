@@ -1,17 +1,7 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sephe\Desktop\Unreal\UnrealProjects).
-  Invalidating makefile for A__SmothersSephenEditor (BaseCharacter.cpp.obj.response modified)
   Building A__SmothersSephenEditor...
   Using Visual Studio 2022 14.39.33521 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519) and Windows 10.0.22000.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 8 actions with 16 processes...
-    [1/8] A__SmothersSephen.init.gen.cpp
-    [2/8] BaseCharacter.gen.cpp
-    [3/8] BasePlayer.gen.cpp
-    [4/8] BaseCharacter.cpp
-    [5/8] BasePlayer.cpp
-    [6/8] UE4Editor-A__SmothersSephen-0006.lib
-       Creating library C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0006.lib and object C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0006.exp
-    [7/8] UE4Editor-A__SmothersSephen-0006.dll
-       Creating library C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0006.suppressed.lib and object C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0006.suppressed.exp
-    [8/8] A__SmothersSephenEditor.target
-  Total time in Parallel executor: 3.37 seconds
-  Total execution time: 5.02 seconds
+  Building 1 action with 16 processes...
+    [1/1] A__SmothersSephenEditor.target
+  Total time in Parallel executor: 0.18 seconds
+  Total execution time: 0.62 seconds

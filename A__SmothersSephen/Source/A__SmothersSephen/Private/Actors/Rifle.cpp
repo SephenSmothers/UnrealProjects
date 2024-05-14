@@ -80,6 +80,8 @@ void ARifle::SetOwnerAlive(bool alive)
 void ARifle::ActionStopped()
 {
 	ActionHappening = false;
+
+	OnWeaponStopped.Broadcast();
 }
 
 

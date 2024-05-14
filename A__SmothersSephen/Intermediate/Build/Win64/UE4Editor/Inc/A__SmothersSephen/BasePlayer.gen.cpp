@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABasePlayer, 3533142672);
+	IMPLEMENT_CLASS(ABasePlayer, 3774222164);
 	template<> A__SMOTHERSSEPHEN_API UClass* StaticClass<ABasePlayer>()
 	{
 		return ABasePlayer::StaticClass();
