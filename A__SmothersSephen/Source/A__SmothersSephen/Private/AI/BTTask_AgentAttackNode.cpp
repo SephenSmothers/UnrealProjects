@@ -17,7 +17,7 @@ EBTNodeResult::Type UBTTask_AgentAttackNode::ExecuteTask(UBehaviorTreeComponent&
 		//{
 	
 		//}
-
+		 
 		IEnemyInterface* I = Cast<IEnemyInterface>(*itr);
 		if (I)
 		{

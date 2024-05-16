@@ -37,6 +37,7 @@ void ACoreAgent::UpdateHealth(float percentage)
 {
 
 	UAIBlueprintHelperLibrary::GetAIController(this->GetParentActor())->GetBlackboardComponent()->SetValueAsFloat(KeyName, percentage);
+	
 }
 
 void ACoreAgent::UpdateAmmo(float min, float max)
