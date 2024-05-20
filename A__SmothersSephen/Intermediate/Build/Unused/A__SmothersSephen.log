@@ -1,21 +1,13 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sephe\Desktop\Unreal\UnrealProjects).
-  Invalidating makefile for A__SmothersSephenEditor (AIC_CoreAIController.cpp.obj.response modified)
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects).
+  Invalidating makefile for A__SmothersSephenEditor (ButtonWithText.cpp.obj.response modified)
   Building A__SmothersSephenEditor...
   Using Visual Studio 2022 14.39.33521 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519) and Windows 10.0.22000.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 11 actions with 16 processes...
-    [1/11] EnemyInterface.cpp
-    [2/11] Rifle.cpp
-    [3/11] BaseCharacter.cpp
-    [4/11] TestingDefaultPawn.cpp
-    [5/11] CoreAgent.cpp
-    [6/11] BTTask_AgentAttackNode.cpp
-    [7/11] AIC_CoreAIController.cpp
-    [8/11] BTTask_FindLocationNode.cpp
-C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen\Private\AI\BTTask_FindLocationNode.cpp(25): warning C4996: 'UNavigationSystemV1::GetRandomPointInNavigableRadius': This version of GetRandomPointInNavigableRadius is deprecated. Please use the new version Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-    [9/11] UE4Editor-A__SmothersSephen-0002.lib
-       Creating library C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0002.lib and object C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0002.exp
-    [10/11] UE4Editor-A__SmothersSephen-0002.dll
-       Creating library C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0002.suppressed.lib and object C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0002.suppressed.exp
-    [11/11] A__SmothersSephenEditor.target
-  Total time in Parallel executor: 3.29 seconds
-  Total execution time: 5.01 seconds
+  Building 4 actions with 20 processes...
+    [1/4] ButtonWithText.cpp
+    [2/4] UE4Editor-A__SmothersSephen-0005.lib
+       Creating library C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0005.lib and object C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0005.exp
+    [3/4] UE4Editor-A__SmothersSephen-0005.dll
+       Creating library C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0005.suppressed.lib and object C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0005.suppressed.exp
+    [4/4] A__SmothersSephenEditor.target
+  Total time in Parallel executor: 3.32 seconds
+  Total execution time: 5.85 seconds
