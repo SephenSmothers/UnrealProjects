@@ -20,11 +20,11 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	UFUNCTION(BlueprintCallable)
-	void UpdateHealth(float percentage);
+	//UFUNCTION(BlueprintCallable)
+	//void UpdateHealth(float percentage);
 
-	UFUNCTION(BlueprintCallable)
-	void UpdateAmmo(float min, float max);
+	//UFUNCTION(BlueprintCallable)
+	//void UpdateAmmo(float min, float max);
 
 	UFUNCTION(BlueprintCallable)
 	void EndAttack();
@@ -35,8 +35,8 @@ protected:
 	UPROPERTY(EditDefaultsOnly)
 	FName AmmoName;
 
-	/*UPROPERTY(EditDefaultsOnly)
-	FName HealthName;*/
+	UPROPERTY(EditDefaultsOnly)
+	FName HealthName;
 
 	UPROPERTY(EditDefaultsOnly)
 	FName AiMessage;

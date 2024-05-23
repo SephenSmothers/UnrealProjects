@@ -2,7 +2,7 @@
 
 
 #include "Actors/CoreAgent.h"
-#include <Blueprint/AIBlueprintHelperLibrary.h>
+//#include <Blueprint/AIBlueprintHelperLibrary.h>
 #include "AIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "BrainComponent.h"
@@ -33,17 +33,17 @@ void ACoreAgent::BeginPlay()
 	 
 }
 
-void ACoreAgent::UpdateHealth(float percentage)
-{
-
-	UAIBlueprintHelperLibrary::GetAIController(this->GetParentActor())->GetBlackboardComponent()->SetValueAsFloat(KeyName, percentage);
-	
-}
-
-void ACoreAgent::UpdateAmmo(float min, float max)
-{
-	UAIBlueprintHelperLibrary::GetAIController(this->GetParentActor())->GetBlackboardComponent()->SetValueAsFloat(AmmoName, min); 
-}
+//void ACoreAgent::UpdateHealth(float percentage)
+//{
+//
+//	UAIBlueprintHelperLibrary::GetAIController(this->GetParentActor())->GetBlackboardComponent()->SetValueAsFloat(KeyName, percentage);
+//	
+//}
+//
+//void ACoreAgent::UpdateAmmo(float min, float max)
+//{
+//	UAIBlueprintHelperLibrary::GetAIController(this->GetParentActor())->GetBlackboardComponent()->SetValueAsFloat(AmmoName, min); 
+//}
 
 void ACoreAgent::EndAttack()
 {

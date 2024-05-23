@@ -17,5 +17,7 @@ C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__Smother
 C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\CharacterAnimation.generated.h
 C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen\Public\Components/HealthComponent.h
 C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\HealthComponent.generated.h
+C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen\Public\Utility/BPI_CorePickupInterface.h
+C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\BPI_CorePickupInterface.generated.h
 C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\BaseCharacter.generated.h
 C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Inc\A__SmothersSephen\BasePlayer.generated.h

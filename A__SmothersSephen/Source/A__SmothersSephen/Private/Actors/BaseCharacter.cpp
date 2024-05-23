@@ -38,9 +38,12 @@ void ABaseCharacter::BeginPlay()
 	if (AnimInstanceCore != nullptr)
 	{
 		Weapon->OnRifleFire.AddDynamic(AnimInstanceCore, &UCharacterAnimation::FireAnimation);
+		Weapon->OnReloadStart.AddDynamic(AnimInstanceCore, &UCharacterAnimation::ReloadAnimation);
 		HealthComponent->OnHurt.AddDynamic(AnimInstanceCore, &UCharacterAnimation::HurtAnimation);
 		HealthComponent->OnDead.AddDynamic(AnimInstanceCore, &UCharacterAnimation::DeadAnimation);
 		HealthComponent->OnDead.AddDynamic(this, &ABaseCharacter::HandleDeath);
+		
+
 	}
 	else
 	{
@@ -68,8 +71,7 @@ void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
 
-
-
-
-
-
+bool ABaseCharacter::CanPickupHealth()
+{
+	return false;
+}

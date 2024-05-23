@@ -41,6 +41,9 @@ void ABasePlayer::BeginPlay()
 
 			HealthComponent->OnHurt.AddDynamic(hud, &UGameHUD::SetHealthComponent);
 			HealthComponent->OnDead.AddDynamic(hud, &UGameHUD::SetHealthComponentDead);
+			HealthComponent->OnHeal.AddDynamic(hud, &UGameHUD::SetHealthComponent);
+			Weapon->OnAmmoChanged.AddDynamic(hud, &UGameHUD::SettAmmoText);
+			Weapon->ReloadAmmo();
 		}
 	}
 	else
@@ -61,6 +64,7 @@ void ABasePlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAxis("MoveForward", this, &ABasePlayer::InputAxisMoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ABasePlayer::InputAxisMoveRight);
 	PlayerInputComponent->BindAction("AttackInput", IE_Pressed, this, &ABasePlayer::InputActionAttack);
+	PlayerInputComponent->BindAction("ReloadInput", IE_Pressed, this, &ABasePlayer::InputActionReload);
 }
 
 void ABasePlayer::InputAxisMoveForward(float AxisValue)
@@ -86,10 +90,24 @@ void ABasePlayer::InputActionAttack()
 	//}
 }
 
+void ABasePlayer::InputActionReload()
+{
+	if (Weapon)
+	{
+		Weapon->ReloadAmmo();
+		Weapon->OnReloadStart.Broadcast();
+	}
+}
+
 void ABasePlayer::HandleDeath(float ratio)
 {
 	Super::HandleDeath(ratio);
 	DisableInput(PlayerController);
+}
+
+bool ABasePlayer::CanPickupHealth()
+{
+	return false;
 }
 
 

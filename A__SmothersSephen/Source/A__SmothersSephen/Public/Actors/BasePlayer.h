@@ -18,6 +18,7 @@ private:
 	void InputAxisMoveForward(float AxisValue);
 	void InputAxisMoveRight(float AxisValue);
 	void InputActionAttack();
+	void InputActionReload();
 
 
 protected:
@@ -41,6 +42,8 @@ protected:
 
 
 	virtual void HandleDeath(float ratio) override;
+
+	virtual bool CanPickupHealth() override;
 
 public:
 	ABasePlayer();

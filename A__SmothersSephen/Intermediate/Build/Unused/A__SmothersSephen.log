@@ -1,13 +1,14 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects).
-  Invalidating makefile for A__SmothersSephenEditor (ButtonWithText.cpp.obj.response modified)
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sephe\Desktop\Unreal\UnrealProjects).
+  Invalidating makefile for A__SmothersSephenEditor (MyBP_CodeHealthPickup.cpp.obj.response modified)
   Building A__SmothersSephenEditor...
   Using Visual Studio 2022 14.39.33521 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519) and Windows 10.0.22000.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 20 processes...
-    [1/4] ButtonWithText.cpp
-    [2/4] UE4Editor-A__SmothersSephen-0005.lib
-       Creating library C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0005.lib and object C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0005.exp
-    [3/4] UE4Editor-A__SmothersSephen-0005.dll
-       Creating library C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0005.suppressed.lib and object C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0005.suppressed.exp
-    [4/4] A__SmothersSephenEditor.target
-  Total time in Parallel executor: 3.32 seconds
-  Total execution time: 5.85 seconds
+  Building 5 actions with 16 processes...
+    [1/5] MyBP_CodeHealthPickup.cpp
+    [2/5] BP_CodeBasePickup.cpp
+    [3/5] UE4Editor-A__SmothersSephen-0032.lib
+       Creating library C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0032.lib and object C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0032.exp
+    [4/5] UE4Editor-A__SmothersSephen-0032.dll
+       Creating library C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0032.suppressed.lib and object C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0032.suppressed.exp
+    [5/5] A__SmothersSephenEditor.target
+  Total time in Parallel executor: 1.16 seconds
+  Total execution time: 2.73 seconds

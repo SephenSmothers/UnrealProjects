@@ -5,13 +5,6 @@
 #include "Animation/AnimSequenceBase.h"
 #include "../../A__SmothersSephen.h"
 
-
-//UCharacterAnimation::UCharacterAnimation()
-//{
-//	DeadSequenceArray.Add(HurtSequence);
-//	DeadSequenceArray.Add(DeadSequence);
-//}
-
 void UCharacterAnimation::NativeUpdateAnimation(float DeltaSeconds)
 {
 	Super::NativeUpdateAnimation(DeltaSeconds);
@@ -78,6 +71,18 @@ void UCharacterAnimation::HurtAnimation_Implementation(float ratio)
 void UCharacterAnimation::DeadAnimation_Implementation(float ratio)
 {
 	DeadSequence = DeadSequenceArray[FMath::RandRange(0, DeadSequenceArray.Num() - 1)];
+}
+
+void UCharacterAnimation::ReloadAnimation_Implementation()
+{
+	if (ReloadSequence)
+	{
+		PlaySlotAnimationAsDynamicMontage(ReloadSequence, SlotName);
+	}
+	else
+	{
+		UE_LOG(Game, Warning, TEXT("Failed to load Reload_Ironsights animation montage!"));
+	}
 }
 
 void UCharacterAnimation::PreviewWindowUpdate_Implementation()

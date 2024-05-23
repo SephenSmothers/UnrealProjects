@@ -3,6 +3,8 @@
 
 #include "Both_BP_Code/GameHUD.h"
 #include "Components/ProgressBar.h"
+#include "Components/TextBlock.h"
+
 
 void UGameHUD::SetHealthComponent(float percent)
 {
@@ -12,4 +14,13 @@ void UGameHUD::SetHealthComponent(float percent)
 void UGameHUD::SetHealthComponentDead(float percent)
 {
 	HealthBar->SetPercent(percent);
+}
+
+void UGameHUD::SettAmmoText(float min, float max)
+{
+	if (CurrentAmmo && MaxAmmo)
+	{
+		CurrentAmmo->SetText(FText::AsNumber(min));
+		MaxAmmo->SetText(FText::AsNumber(max));
+	}
 }

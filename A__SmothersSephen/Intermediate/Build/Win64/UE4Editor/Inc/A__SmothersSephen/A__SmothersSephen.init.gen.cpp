@@ -12,6 +12,8 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeA__SmothersSephen_init() {}
 	A__SMOTHERSSEPHEN_API UFunction* Z_Construct_UDelegateFunction_A__SmothersSephen_RifleFire__DelegateSignature();
+	A__SMOTHERSSEPHEN_API UFunction* Z_Construct_UDelegateFunction_A__SmothersSephen_AmmoUpdate__DelegateSignature();
+	A__SMOTHERSSEPHEN_API UFunction* Z_Construct_UDelegateFunction_A__SmothersSephen_AnimSequence__DelegateSignature();
 	A__SMOTHERSSEPHEN_API UFunction* Z_Construct_UDelegateFunction_A__SmothersSephen_HealthDelegate__DelegateSignature();
 	A__SMOTHERSSEPHEN_API UFunction* Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_A__SmothersSephen()
@@ -21,6 +23,8 @@ void EmptyLinkFunctionForGeneratedCodeA__SmothersSephen_init() {}
 		{
 			static UObject* (*const SingletonFuncArray[])() = {
 				(UObject* (*)())Z_Construct_UDelegateFunction_A__SmothersSephen_RifleFire__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_A__SmothersSephen_AmmoUpdate__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_A__SmothersSephen_AnimSequence__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_A__SmothersSephen_HealthDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_A__SmothersSephen_VariableDelegate__DelegateSignature,
 			};
@@ -29,8 +33,8 @@ void EmptyLinkFunctionForGeneratedCodeA__SmothersSephen_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xCE803E83,
-				0x95A3E64B,
+				0xE61B81F1,
+				0xF8D36660,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

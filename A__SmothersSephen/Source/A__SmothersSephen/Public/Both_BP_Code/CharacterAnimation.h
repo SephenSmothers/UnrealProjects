@@ -9,6 +9,9 @@
 /**
  * 
  */
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FAnimSequence);
+
 UCLASS()
 class A__SMOTHERSSEPHEN_API UCharacterAnimation : public UAnimInstance
 {
@@ -45,6 +48,9 @@ protected:
 	class UAnimSequenceBase* DeadSequence;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Default)
+	class UAnimSequenceBase* ReloadSequence;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Default)
 	TArray<UAnimSequenceBase*> DeadSequenceArray;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Default)
@@ -58,6 +64,12 @@ protected:
 
 public:
 
+	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = Default)
+	FAnimSequence OnReloadNow; 
+
+	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = Default)
+	FAnimSequence OnReloadEnded; 
+
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void FireAnimation();
 	virtual void FireAnimation_Implementation();
@@ -69,5 +81,9 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void DeadAnimation(float ratio);
 	virtual void DeadAnimation_Implementation(float ratio);
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void ReloadAnimation();
+	virtual void ReloadAnimation_Implementation();
 
 };

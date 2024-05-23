@@ -56,6 +56,7 @@ void ARifle::Attack_Implementation()
 			GetWorld()->GetTimerManager().SetTimer(fTimer, this, &ARifle::ActionStopped, 1.0f, false);
 
 			OnRifleFire.Broadcast();
+			UseAmmo();
 		}
 	}
 }
@@ -70,6 +71,19 @@ bool ARifle::CanShoot() const
 	{
 		return false;
 	}
+}
+
+void ARifle::ReloadAmmo()
+{
+	CurrentAmmo = MaxAmmo;
+	OnAmmoChanged.Broadcast(CurrentAmmo, MaxAmmo);
+}
+
+void ARifle::UseAmmo()
+{
+	CurrentAmmo -= 1.0f;
+	CurrentAmmo = FMath::Max(0.0f, CurrentAmmo);
+	OnAmmoChanged.Broadcast(CurrentAmmo, MaxAmmo);
 }
 
 void ARifle::SetOwnerAlive(bool alive)

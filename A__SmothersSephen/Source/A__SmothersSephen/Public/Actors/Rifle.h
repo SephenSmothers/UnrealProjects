@@ -10,6 +10,8 @@
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FRifleFire);
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FAmmoUpdate, float, current, float, max);
+
 UCLASS()
 class A__SMOTHERSSEPHEN_API ARifle : public AActor
 {
@@ -40,9 +42,16 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)
 	TSubclassOf<AProjectile> Projectile;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default) 
+	float MaxAmmo; 
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default) 
+	float CurrentAmmo; 
+
 	UFUNCTION(BlueprintCallable)
 	bool CanShoot() const;
-	//virtual bool  CanShoot_Implementation();
+	
+
 
 	
 
@@ -75,7 +84,20 @@ public:
 	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = "Variable")
 	FRifleFire OnWeaponStopped;
 
+	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = "Variable")
+	FAmmoUpdate OnAmmoChanged;
 
+	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = "Variable")
+	FRifleFire OnReloadStart;
+
+	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = "Variable")
+	FRifleFire OnReloadEnded;
+
+	UFUNCTION(BlueprintCallable)
+	void ReloadAmmo();
+
+	UFUNCTION(BlueprintCallable)
+	void UseAmmo();
 };
 
 

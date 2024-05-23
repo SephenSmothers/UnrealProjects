@@ -14,12 +14,43 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 // Cross Module References
+	A__SMOTHERSSEPHEN_API UFunction* Z_Construct_UDelegateFunction_A__SmothersSephen_AnimSequence__DelegateSignature();
+	UPackage* Z_Construct_UPackage__Script_A__SmothersSephen();
 	A__SMOTHERSSEPHEN_API UClass* Z_Construct_UClass_UCharacterAnimation_NoRegister();
 	A__SMOTHERSSEPHEN_API UClass* Z_Construct_UClass_UCharacterAnimation();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimInstance();
-	UPackage* Z_Construct_UPackage__Script_A__SmothersSephen();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimSequenceBase_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_A__SmothersSephen_AnimSequence__DelegateSignature_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_A__SmothersSephen_AnimSequence__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
+		{ "ModuleRelativePath", "Public/Both_BP_Code/CharacterAnimation.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_A__SmothersSephen_AnimSequence__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_A__SmothersSephen, nullptr, "AnimSequence__DelegateSignature", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_A__SmothersSephen_AnimSequence__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_A__SmothersSephen_AnimSequence__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_A__SmothersSephen_AnimSequence__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_A__SmothersSephen_AnimSequence__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UCharacterAnimation::execReloadAnimation)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ReloadAnimation_Implementation();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UCharacterAnimation::execDeadAnimation)
 	{
 		P_GET_PROPERTY(FFloatProperty,Z_Param_ratio);
@@ -74,6 +105,11 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 	{
 		ProcessEvent(FindFunctionChecked(NAME_UCharacterAnimation_PreviewWindowUpdate),NULL);
 	}
+	static FName NAME_UCharacterAnimation_ReloadAnimation = FName(TEXT("ReloadAnimation"));
+	void UCharacterAnimation::ReloadAnimation()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UCharacterAnimation_ReloadAnimation),NULL);
+	}
 	void UCharacterAnimation::StaticRegisterNativesUCharacterAnimation()
 	{
 		UClass* Class = UCharacterAnimation::StaticClass();
@@ -82,6 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 			{ "FireAnimation", &UCharacterAnimation::execFireAnimation },
 			{ "HurtAnimation", &UCharacterAnimation::execHurtAnimation },
 			{ "PreviewWindowUpdate", &UCharacterAnimation::execPreviewWindowUpdate },
+			{ "ReloadAnimation", &UCharacterAnimation::execReloadAnimation },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -185,6 +222,28 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UCharacterAnimation_ReloadAnimation_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UCharacterAnimation_ReloadAnimation_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Both_BP_Code/CharacterAnimation.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UCharacterAnimation_ReloadAnimation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCharacterAnimation, nullptr, "ReloadAnimation", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UCharacterAnimation_ReloadAnimation_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UCharacterAnimation_ReloadAnimation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UCharacterAnimation_ReloadAnimation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UCharacterAnimation_ReloadAnimation_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UCharacterAnimation_NoRegister()
 	{
 		return UCharacterAnimation::StaticClass();
@@ -231,6 +290,10 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DeadSequence_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DeadSequence;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ReloadSequence_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReloadSequence;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DeadSequenceArray_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DeadSequenceArray_MetaData[];
@@ -240,6 +303,14 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SlotName_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FNamePropertyParams NewProp_SlotName;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OnReloadNow_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnReloadNow;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OnReloadEnded_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnReloadEnded;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -253,10 +324,10 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 		{ &Z_Construct_UFunction_UCharacterAnimation_FireAnimation, "FireAnimation" }, // 839842952
 		{ &Z_Construct_UFunction_UCharacterAnimation_HurtAnimation, "HurtAnimation" }, // 1462321282
 		{ &Z_Construct_UFunction_UCharacterAnimation_PreviewWindowUpdate, "PreviewWindowUpdate" }, // 3495681267
+		{ &Z_Construct_UFunction_UCharacterAnimation_ReloadAnimation, "ReloadAnimation" }, // 348566868
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCharacterAnimation_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "AnimInstance" },
 		{ "IncludePath", "Both_BP_Code/CharacterAnimation.h" },
 		{ "ModuleRelativePath", "Public/Both_BP_Code/CharacterAnimation.h" },
@@ -330,6 +401,13 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_DeadSequence = { "DeadSequence", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UCharacterAnimation, DeadSequence), Z_Construct_UClass_UAnimSequenceBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_DeadSequence_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_DeadSequence_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_ReloadSequence_MetaData[] = {
+		{ "Category", "Default" },
+		{ "ModuleRelativePath", "Public/Both_BP_Code/CharacterAnimation.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_ReloadSequence = { "ReloadSequence", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UCharacterAnimation, ReloadSequence), Z_Construct_UClass_UAnimSequenceBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_ReloadSequence_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_ReloadSequence_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_DeadSequenceArray_Inner = { "DeadSequenceArray", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UAnimSequenceBase_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_DeadSequenceArray_MetaData[] = {
@@ -345,6 +423,20 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 	};
 #endif
 	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_SlotName = { "SlotName", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UCharacterAnimation, SlotName), METADATA_PARAMS(Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_SlotName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_SlotName_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_OnReloadNow_MetaData[] = {
+		{ "Category", "Default" },
+		{ "ModuleRelativePath", "Public/Both_BP_Code/CharacterAnimation.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_OnReloadNow = { "OnReloadNow", nullptr, (EPropertyFlags)0x0010100010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UCharacterAnimation, OnReloadNow), Z_Construct_UDelegateFunction_A__SmothersSephen_AnimSequence__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_OnReloadNow_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_OnReloadNow_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_OnReloadEnded_MetaData[] = {
+		{ "Category", "Default" },
+		{ "ModuleRelativePath", "Public/Both_BP_Code/CharacterAnimation.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_OnReloadEnded = { "OnReloadEnded", nullptr, (EPropertyFlags)0x0010100010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UCharacterAnimation, OnReloadEnded), Z_Construct_UDelegateFunction_A__SmothersSephen_AnimSequence__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_OnReloadEnded_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_OnReloadEnded_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UCharacterAnimation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_Speed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_Direction,
@@ -354,9 +446,12 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_Sequence,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_HurtSequence,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_DeadSequence,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_ReloadSequence,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_DeadSequenceArray_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_DeadSequenceArray,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_SlotName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_OnReloadNow,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterAnimation_Statics::NewProp_OnReloadEnded,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UCharacterAnimation_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UCharacterAnimation>::IsAbstract,
@@ -385,7 +480,7 @@ void EmptyLinkFunctionForGeneratedCodeCharacterAnimation() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UCharacterAnimation, 7882438);
+	IMPLEMENT_CLASS(UCharacterAnimation, 1059529402);
 	template<> A__SMOTHERSSEPHEN_API UClass* StaticClass<UCharacterAnimation>()
 	{
 		return UCharacterAnimation::StaticClass();

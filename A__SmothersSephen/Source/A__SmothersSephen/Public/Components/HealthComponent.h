@@ -43,4 +43,7 @@ public:
 
 	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = "Variable")
 	FHealthDelegate OnDead;	
+
+	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = "Variable")
+	FHealthDelegate OnHeal;
 };

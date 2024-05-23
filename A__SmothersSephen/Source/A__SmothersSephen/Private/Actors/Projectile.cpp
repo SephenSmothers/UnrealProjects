@@ -45,7 +45,7 @@ AProjectile::AProjectile()
 
 void AProjectile::HandleOnHit(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	UE_LOG(Game, Log, TEXT("Projectile Collided With: %s"), *OtherActor->GetName());
+	UE_LOG(Game, Log, TEXT("Projectile Collided With: %s"), *OtherActor->GetName()); 
 	UGameplayStatics::ApplyDamage(OtherActor, Damage, OwnerController, this, NULL);
 	//OtherActor->TakeDamage(Damage, )
 	Destroy();

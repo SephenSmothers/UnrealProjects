@@ -7,10 +7,11 @@
 #include "Actors/Rifle.h"
 #include "Both_BP_Code/CharacterAnimation.h"
 #include "Components/HealthComponent.h"
+#include "Utility/BPI_CorePickupInterface.h"
 #include "BaseCharacter.generated.h"
 
 UCLASS(Abstract)
-class A__SMOTHERSSEPHEN_API ABaseCharacter : public ACharacter
+class A__SMOTHERSSEPHEN_API ABaseCharacter : public ACharacter, public IBPI_CorePickupInterface
 {
 	GENERATED_BODY()
 
@@ -47,6 +48,8 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	virtual bool CanPickupHealth() override;
 
 };
 
