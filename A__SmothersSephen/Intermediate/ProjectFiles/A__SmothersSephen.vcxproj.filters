@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\A__SmothersSephen.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{EFCDC0ED-E5F6-4762-8702-013841AF5B53}</UniqueIdentifier>
+      <UniqueIdentifier>{5B6D087A-D512-4607-9B6C-880BB25EEA77}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\A__SmothersSephen.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{48A75722-4597-479A-855F-254642245E93}</UniqueIdentifier>
+      <UniqueIdentifier>{4ECF179C-844F-44AA-BE18-2F84862D990D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\A__SmothersSephen">
-      <UniqueIdentifier>{3A39997E-52D0-4AA3-8457-CD8AA5FA3D3A}</UniqueIdentifier>
+      <UniqueIdentifier>{D2C9EE89-09DE-4AA9-91A2-C96EDA9BC367}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\A__SmothersSephen\A__SmothersSephen.Build.cs">
       <Filter>Source\A__SmothersSephen</Filter>
@@ -45,10 +45,10 @@
       <Filter>Source\A__SmothersSephen</Filter>
     </ClInclude>
     <Filter Include="Source\A__SmothersSephen\Private">
-      <UniqueIdentifier>{43EA32B0-16C6-4DC3-934E-5DA6B7F016D5}</UniqueIdentifier>
+      <UniqueIdentifier>{67C6C397-EF70-42F1-866F-2FB7001A6E68}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\A__SmothersSephen\Private\Actors">
-      <UniqueIdentifier>{742877F5-396C-42BA-ACEA-6935E1DB0BED}</UniqueIdentifier>
+      <UniqueIdentifier>{6BED6A52-3C30-4984-B3C9-6949E81302E6}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\A__SmothersSephen\Private\Actors\AIC_CoreAIController.cpp">
       <Filter>Source\A__SmothersSephen\Private\Actors</Filter>
@@ -78,7 +78,7 @@
       <Filter>Source\A__SmothersSephen\Private\Actors</Filter>
     </ClCompile>
     <Filter Include="Source\A__SmothersSephen\Private\AI">
-      <UniqueIdentifier>{40E56126-EFA2-41B4-ACB6-31C978065BEC}</UniqueIdentifier>
+      <UniqueIdentifier>{91F5599C-7688-40C5-9E52-95AF30090E35}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\A__SmothersSephen\Private\AI\BTTask_AgentAttackNode.cpp">
       <Filter>Source\A__SmothersSephen\Private\AI</Filter>
@@ -90,7 +90,7 @@
       <Filter>Source\A__SmothersSephen\Private\AI</Filter>
     </ClCompile>
     <Filter Include="Source\A__SmothersSephen\Private\Both_BP_Code">
-      <UniqueIdentifier>{FFFC7D44-320C-4C54-9469-B934E1130143}</UniqueIdentifier>
+      <UniqueIdentifier>{A30B0A51-09D2-47F6-978C-82BB3346BC02}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\A__SmothersSephen\Private\Both_BP_Code\ButtonWithText.cpp">
       <Filter>Source\A__SmothersSephen\Private\Both_BP_Code</Filter>
@@ -102,7 +102,7 @@
       <Filter>Source\A__SmothersSephen\Private\Both_BP_Code</Filter>
     </ClCompile>
     <Filter Include="Source\A__SmothersSephen\Private\Components">
-      <UniqueIdentifier>{0B942FB0-A23A-49EC-BBA3-191FE5A2BD54}</UniqueIdentifier>
+      <UniqueIdentifier>{B68D8906-9F9F-42F8-94D9-0EDABEF0B82F}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\A__SmothersSephen\Private\Components\HealthComponent.cpp">
       <Filter>Source\A__SmothersSephen\Private\Components</Filter>
@@ -111,7 +111,7 @@
       <Filter>Source\A__SmothersSephen\Private\Components</Filter>
     </ClCompile>
     <Filter Include="Source\A__SmothersSephen\Private\Testing">
-      <UniqueIdentifier>{EE742370-D21C-43CC-B87C-90165B8D9B86}</UniqueIdentifier>
+      <UniqueIdentifier>{5627A8AE-9C3D-41A2-B02B-DE00032271FD}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\A__SmothersSephen\Private\Testing\BoundInCodeBlueprintFuncInter.cpp">
       <Filter>Source\A__SmothersSephen\Private\Testing</Filter>
@@ -132,7 +132,7 @@
       <Filter>Source\A__SmothersSephen\Private\Testing</Filter>
     </ClCompile>
     <Filter Include="Source\A__SmothersSephen\Private\Utility">
-      <UniqueIdentifier>{D4AF370E-8D30-4703-A202-90A0521BCADD}</UniqueIdentifier>
+      <UniqueIdentifier>{A6BACFC4-D5C1-44D5-811F-192502696002}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\A__SmothersSephen\Private\Utility\BPI_CorePickupInterface.cpp">
       <Filter>Source\A__SmothersSephen\Private\Utility</Filter>
@@ -141,10 +141,10 @@
       <Filter>Source\A__SmothersSephen\Private\Utility</Filter>
     </ClCompile>
     <Filter Include="Source\A__SmothersSephen\Public">
-      <UniqueIdentifier>{FB69AF14-933A-43D9-8CE6-9794A53209CC}</UniqueIdentifier>
+      <UniqueIdentifier>{A9B4E124-B1DB-4ED5-8B42-2DEF0CF8E638}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\A__SmothersSephen\Public\Actors">
-      <UniqueIdentifier>{9787CB08-6135-4675-88FA-A28E8CC7091B}</UniqueIdentifier>
+      <UniqueIdentifier>{E8925E19-3722-41DC-839F-6684445733F5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\A__SmothersSephen\Public\Actors\AIC_CoreAIController.h">
       <Filter>Source\A__SmothersSephen\Public\Actors</Filter>
@@ -174,7 +174,7 @@
       <Filter>Source\A__SmothersSephen\Public\Actors</Filter>
     </ClInclude>
     <Filter Include="Source\A__SmothersSephen\Public\AI">
-      <UniqueIdentifier>{4C5DB66A-1DEA-46C3-B179-FD817DD2A581}</UniqueIdentifier>
+      <UniqueIdentifier>{F8640D23-DDA7-42C5-947B-2BE75662450B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\A__SmothersSephen\Public\AI\BTTask_AgentAttackNode.h">
       <Filter>Source\A__SmothersSephen\Public\AI</Filter>
@@ -186,7 +186,7 @@
       <Filter>Source\A__SmothersSephen\Public\AI</Filter>
     </ClInclude>
     <Filter Include="Source\A__SmothersSephen\Public\Both_BP_Code">
-      <UniqueIdentifier>{802B4D60-2580-4E68-84A0-88ED8A49F5E7}</UniqueIdentifier>
+      <UniqueIdentifier>{9AE99E36-BF9D-4C54-8D6E-BA70AA1ED7DF}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\A__SmothersSephen\Public\Both_BP_Code\ButtonWithText.h">
       <Filter>Source\A__SmothersSephen\Public\Both_BP_Code</Filter>
@@ -198,7 +198,7 @@
       <Filter>Source\A__SmothersSephen\Public\Both_BP_Code</Filter>
     </ClInclude>
     <Filter Include="Source\A__SmothersSephen\Public\Components">
-      <UniqueIdentifier>{619DE738-77D7-48BB-B9AE-5A3FC321086A}</UniqueIdentifier>
+      <UniqueIdentifier>{2F4D484F-E753-4594-9CEB-EF1D94DA3933}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\A__SmothersSephen\Public\Components\HealthComponent.h">
       <Filter>Source\A__SmothersSephen\Public\Components</Filter>
@@ -207,7 +207,7 @@
       <Filter>Source\A__SmothersSephen\Public\Components</Filter>
     </ClInclude>
     <Filter Include="Source\A__SmothersSephen\Public\Testing">
-      <UniqueIdentifier>{23D9E595-1593-4511-B0D4-98A7288CC4BD}</UniqueIdentifier>
+      <UniqueIdentifier>{2FBC41CF-5833-40BB-AD04-5449FD37A16E}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\A__SmothersSephen\Public\Testing\BoundInCodeBlueprintFuncInter.h">
       <Filter>Source\A__SmothersSephen\Public\Testing</Filter>
@@ -228,7 +228,7 @@
       <Filter>Source\A__SmothersSephen\Public\Testing</Filter>
     </ClInclude>
     <Filter Include="Source\A__SmothersSephen\Public\Utility">
-      <UniqueIdentifier>{67ACB6DB-30C5-477C-A28D-3E8F6CAD0AF2}</UniqueIdentifier>
+      <UniqueIdentifier>{19ACC758-EBCE-433B-94F7-BE777603CE3B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\A__SmothersSephen\Public\Utility\BPI_CorePickupInterface.h">
       <Filter>Source\A__SmothersSephen\Public\Utility</Filter>
