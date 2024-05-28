@@ -1,18 +1,13 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects).
-  Invalidating makefile for A__SmothersSephenEditor (BP_CodeBasePickup.cpp.obj.response modified)
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sephe\Desktop\Unreal\UnrealProjects).
   Building A__SmothersSephenEditor...
   Using Visual Studio 2022 14.39.33521 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519) and Windows 10.0.22000.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 9 actions with 20 processes...
-    [1/9] MyBP_CodeHealthPickup.cpp
-    [2/9] BP_CodeBasePickup.cpp
-    [3/9] CodeDamagePickup.cpp
-    [4/9] CodeDamagePickup.gen.cpp
-    [5/9] MyBP_CodeHealthPickup.gen.cpp
-    [6/9] BP_CodeBasePickup.gen.cpp
-    [7/9] UE4Editor-A__SmothersSephen-0002.lib
-       Creating library C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0002.lib and object C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0002.exp
-    [8/9] UE4Editor-A__SmothersSephen-0002.dll
-       Creating library C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0002.suppressed.lib and object C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen-0002.suppressed.exp
-    [9/9] A__SmothersSephenEditor.target
-  Total time in Parallel executor: 7.82 seconds
-  Total execution time: 16.37 seconds
+  Building 4 actions with 16 processes...
+    [1/4] Module.A__SmothersSephen.cpp
+C:/Users/sephe/Desktop/Unreal/UnrealProjects/A__SmothersSephen/Source/A__SmothersSephen/Private/AI/BTTask_FindLocationNode.cpp(25): warning C4996: 'UNavigationSystemV1::GetRandomPointInNavigableRadius': This version of GetRandomPointInNavigableRadius is deprecated. Please use the new version Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+    [2/4] UE4Editor-A__SmothersSephen.lib
+       Creating library C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen.lib and object C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen.exp
+    [3/4] UE4Editor-A__SmothersSephen.dll
+       Creating library C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen.suppressed.lib and object C:\Users\sephe\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\UE4Editor-A__SmothersSephen.suppressed.exp
+    [4/4] A__SmothersSephenEditor.target
+  Total time in Parallel executor: 12.25 seconds
+  Total execution time: 12.61 seconds

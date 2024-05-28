@@ -70,6 +70,9 @@ public:
 	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = Default)
 	FAnimSequence OnReloadEnded; 
 
+	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = Default)
+	FAnimSequence OnDeathEnded;
+
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void FireAnimation();
 	virtual void FireAnimation_Implementation();
@@ -83,7 +86,13 @@ public:
 	virtual void DeadAnimation_Implementation(float ratio);
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void DeadAnimationEnded();
+	virtual void DeadAnimationEnded_Implementation();
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void ReloadAnimation();
 	virtual void ReloadAnimation_Implementation();
+
+
 
 };

@@ -1,2 +1,0 @@
-C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Intermediate\Build\Win64\UE4Editor\Development\A__SmothersSephen\Definitions.A__SmothersSephen.h
-C:\Users\sephe\OneDrive\Desktop\Unreal\UnrealProjects\A__SmothersSephen\Source\A__SmothersSephen\A__SmothersSephen.h

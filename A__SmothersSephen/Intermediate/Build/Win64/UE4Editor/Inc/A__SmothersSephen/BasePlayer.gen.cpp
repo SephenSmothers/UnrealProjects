@@ -13,18 +13,105 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 // Cross Module References
+	A__SMOTHERSSEPHEN_API UFunction* Z_Construct_UDelegateFunction_A__SmothersSephen_PlayerDelegate__DelegateSignature();
+	UPackage* Z_Construct_UPackage__Script_A__SmothersSephen();
 	A__SMOTHERSSEPHEN_API UClass* Z_Construct_UClass_ABasePlayer_NoRegister();
 	A__SMOTHERSSEPHEN_API UClass* Z_Construct_UClass_ABasePlayer();
 	A__SMOTHERSSEPHEN_API UClass* Z_Construct_UClass_ABaseCharacter();
-	UPackage* Z_Construct_UPackage__Script_A__SmothersSephen();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_APlayerController_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	A__SMOTHERSSEPHEN_API UClass* Z_Construct_UClass_UGameHUD_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_A__SmothersSephen_PlayerDelegate__DelegateSignature_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_A__SmothersSephen_PlayerDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Actors/BasePlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_A__SmothersSephen_PlayerDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_A__SmothersSephen, nullptr, "PlayerDelegate__DelegateSignature", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_A__SmothersSephen_PlayerDelegate__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_A__SmothersSephen_PlayerDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_A__SmothersSephen_PlayerDelegate__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_A__SmothersSephen_PlayerDelegate__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(ABasePlayer::execWinGame)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->WinGame();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ABasePlayer::execDeathEnded)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->DeathEnded();
+		P_NATIVE_END;
+	}
 	void ABasePlayer::StaticRegisterNativesABasePlayer()
 	{
+		UClass* Class = ABasePlayer::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "DeathEnded", &ABasePlayer::execDeathEnded },
+			{ "WinGame", &ABasePlayer::execWinGame },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ABasePlayer_DeathEnded_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABasePlayer_DeathEnded_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Actors/BasePlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABasePlayer_DeathEnded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABasePlayer, nullptr, "DeathEnded", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABasePlayer_DeathEnded_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABasePlayer_DeathEnded_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABasePlayer_DeathEnded()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABasePlayer_DeathEnded_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABasePlayer_WinGame_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABasePlayer_WinGame_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Actors/BasePlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABasePlayer_WinGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABasePlayer, nullptr, "WinGame", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABasePlayer_WinGame_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABasePlayer_WinGame_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABasePlayer_WinGame()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABasePlayer_WinGame_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ABasePlayer_NoRegister()
 	{
@@ -33,6 +120,7 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 	struct Z_Construct_UClass_ABasePlayer_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -52,6 +140,10 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HUDClassType_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_HUDClassType;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OnEndGame_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnEndGame;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -59,6 +151,10 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 	UObject* (*const Z_Construct_UClass_ABasePlayer_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ABaseCharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_A__SmothersSephen,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ABasePlayer_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABasePlayer_DeathEnded, "DeathEnded" }, // 4174974813
+		{ &Z_Construct_UFunction_ABasePlayer_WinGame, "WinGame" }, // 376022644
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::Class_MetaDataParams[] = {
@@ -100,11 +196,19 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_HUDClassType = { "HUDClassType", nullptr, (EPropertyFlags)0x0024080000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABasePlayer, HUDClassType), Z_Construct_UClass_UGameHUD_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_HUDClassType_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_HUDClassType_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_OnEndGame_MetaData[] = {
+		{ "Category", "Default" },
+		{ "ModuleRelativePath", "Public/Actors/BasePlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_OnEndGame = { "OnEndGame", nullptr, (EPropertyFlags)0x0010100010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABasePlayer, OnEndGame), Z_Construct_UDelegateFunction_A__SmothersSephen_PlayerDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_OnEndGame_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_OnEndGame_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABasePlayer_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_SpringArm,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_Camera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_PlayerController,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_HUDClassType,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_OnEndGame,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABasePlayer_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABasePlayer>::IsAbstract,
@@ -114,11 +218,11 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ABasePlayer_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::PropPointers),
 		0,
 		0x009000A4u,
@@ -133,7 +237,7 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABasePlayer, 660702207);
+	IMPLEMENT_CLASS(ABasePlayer, 1099146200);
 	template<> A__SMOTHERSSEPHEN_API UClass* StaticClass<ABasePlayer>()
 	{
 		return ABasePlayer::StaticClass();

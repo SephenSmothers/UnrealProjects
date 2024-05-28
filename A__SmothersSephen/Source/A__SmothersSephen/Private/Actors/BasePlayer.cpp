@@ -67,6 +67,16 @@ void ABasePlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAction("ReloadInput", IE_Pressed, this, &ABasePlayer::InputActionReload);
 }
 
+void ABasePlayer::DeathEnded()
+{
+	OnEndGame.Broadcast();
+}
+
+void ABasePlayer::WinGame()
+{
+	HandleDeath(0);
+}
+
 void ABasePlayer::InputAxisMoveForward(float AxisValue)
 {
 	AddMovementInput(FRotator(0.0f, GetControlRotation().Yaw, 0.0f).Vector(), AxisValue);

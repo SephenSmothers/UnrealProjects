@@ -6,6 +6,8 @@
 #include "Actors/BaseCharacter.h"
 #include "BasePlayer.generated.h"
 
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FPlayerDelegate);
 /**
  * 
  */
@@ -45,7 +47,17 @@ protected:
 
 	virtual bool CanPickupHealth() override;
 
+
 public:
 	ABasePlayer();
 	void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	UFUNCTION(BlueprintCallable)
+	void DeathEnded();
+
+	UFUNCTION(BlueprintCallable)
+	void WinGame();
+
+	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = Default)
+	FPlayerDelegate OnEndGame;
 };

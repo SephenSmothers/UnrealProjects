@@ -23,12 +23,14 @@ static inline void FAnimSequence_DelegateWrapper(const FMulticastScriptDelegate&
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Both_BP_Code_CharacterAnimation_h_18_SPARSE_DATA
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Both_BP_Code_CharacterAnimation_h_18_RPC_WRAPPERS \
 	virtual void ReloadAnimation_Implementation(); \
+	virtual void DeadAnimationEnded_Implementation(); \
 	virtual void DeadAnimation_Implementation(float ratio); \
 	virtual void HurtAnimation_Implementation(float ratio); \
 	virtual void FireAnimation_Implementation(); \
 	virtual void PreviewWindowUpdate_Implementation(); \
  \
 	DECLARE_FUNCTION(execReloadAnimation); \
+	DECLARE_FUNCTION(execDeadAnimationEnded); \
 	DECLARE_FUNCTION(execDeadAnimation); \
 	DECLARE_FUNCTION(execHurtAnimation); \
 	DECLARE_FUNCTION(execFireAnimation); \
@@ -38,6 +40,7 @@ static inline void FAnimSequence_DelegateWrapper(const FMulticastScriptDelegate&
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Both_BP_Code_CharacterAnimation_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execReloadAnimation); \
+	DECLARE_FUNCTION(execDeadAnimationEnded); \
 	DECLARE_FUNCTION(execDeadAnimation); \
 	DECLARE_FUNCTION(execHurtAnimation); \
 	DECLARE_FUNCTION(execFireAnimation); \
