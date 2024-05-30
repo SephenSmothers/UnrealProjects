@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class ARifle;
 #ifdef A__SMOTHERSSEPHEN_BaseCharacter_generated_h
 #error "BaseCharacter.generated.h already included, missing '#pragma once' in BaseCharacter.h"
 #endif
@@ -16,11 +17,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_16_SPARSE_DATA
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_16_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetWeapon); \
+	DECLARE_FUNCTION(execRemoveCharacter); \
 	DECLARE_FUNCTION(execHandleDeath);
 
 
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BaseCharacter_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetWeapon); \
+	DECLARE_FUNCTION(execRemoveCharacter); \
 	DECLARE_FUNCTION(execHandleDeath);
 
 

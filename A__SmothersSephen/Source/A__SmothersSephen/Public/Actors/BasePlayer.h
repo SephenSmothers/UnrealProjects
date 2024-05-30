@@ -7,7 +7,7 @@
 #include "BasePlayer.generated.h"
 
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FPlayerDelegate);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FPlayerDelegate, AActor*, OtherActor); 
 /**
  * 
  */
@@ -41,6 +41,9 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Default)
 	TSubclassOf<class UGameHUD> HUDClassType;
+
+	UPROPERTY()
+	UGameHUD* hud;
 
 
 	virtual void HandleDeath(float ratio) override;

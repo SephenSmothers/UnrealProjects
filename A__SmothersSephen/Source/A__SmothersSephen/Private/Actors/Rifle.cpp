@@ -86,6 +86,26 @@ void ARifle::UseAmmo()
 	OnAmmoChanged.Broadcast(CurrentAmmo, MaxAmmo);
 }
 
+void ARifle::SetCurrentAmmo(float ammo)
+{
+	CurrentAmmo = ammo;
+}
+
+void ARifle::SetMaxAmmo(float ammo)
+{
+	MaxAmmo = ammo;
+}
+
+float ARifle::GetCurrentAmmo()
+{
+	return CurrentAmmo;
+}
+
+float ARifle::GetMaxAmmo()
+{
+	return MaxAmmo;
+}
+
 void ARifle::SetOwnerAlive(bool alive)
 {
 	IsOwnerAlive = alive;

@@ -8,15 +8,22 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef A__SMOTHERSSEPHEN_BasePlayer_generated_h
 #error "BasePlayer.generated.h already included, missing '#pragma once' in BasePlayer.h"
 #endif
 #define A__SMOTHERSSEPHEN_BasePlayer_generated_h
 
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BasePlayer_h_10_DELEGATE \
-static inline void FPlayerDelegate_DelegateWrapper(const FMulticastScriptDelegate& PlayerDelegate) \
+struct _Script_A__SmothersSephen_eventPlayerDelegate_Parms \
 { \
-	PlayerDelegate.ProcessMulticastDelegate<UObject>(NULL); \
+	AActor* OtherActor; \
+}; \
+static inline void FPlayerDelegate_DelegateWrapper(const FMulticastScriptDelegate& PlayerDelegate, AActor* OtherActor) \
+{ \
+	_Script_A__SmothersSephen_eventPlayerDelegate_Parms Parms; \
+	Parms.OtherActor=OtherActor; \
+	PlayerDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
 }
 
 
@@ -79,7 +86,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__SpringArm() { return STRUCT_OFFSET(ABasePlayer, SpringArm); } \
 	FORCEINLINE static uint32 __PPO__Camera() { return STRUCT_OFFSET(ABasePlayer, Camera); } \
 	FORCEINLINE static uint32 __PPO__PlayerController() { return STRUCT_OFFSET(ABasePlayer, PlayerController); } \
-	FORCEINLINE static uint32 __PPO__HUDClassType() { return STRUCT_OFFSET(ABasePlayer, HUDClassType); }
+	FORCEINLINE static uint32 __PPO__HUDClassType() { return STRUCT_OFFSET(ABasePlayer, HUDClassType); } \
+	FORCEINLINE static uint32 __PPO__hud() { return STRUCT_OFFSET(ABasePlayer, hud); }
 
 
 #define A__SmothersSephen_Source_A__SmothersSephen_Public_Actors_BasePlayer_h_14_PROLOG

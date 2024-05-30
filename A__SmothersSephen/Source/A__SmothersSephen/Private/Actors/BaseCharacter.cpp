@@ -42,8 +42,7 @@ void ABaseCharacter::BeginPlay()
 		HealthComponent->OnHurt.AddDynamic(AnimInstanceCore, &UCharacterAnimation::HurtAnimation);
 		HealthComponent->OnDead.AddDynamic(AnimInstanceCore, &UCharacterAnimation::DeadAnimation);
 		HealthComponent->OnDead.AddDynamic(this, &ABaseCharacter::HandleDeath);
-		
-
+		AnimInstanceCore->OnDeathEnded.AddDynamic(this, &ABaseCharacter::RemoveCharacter);
 	}
 	else
 	{
@@ -74,4 +73,14 @@ void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 bool ABaseCharacter::CanPickupHealth()
 {
 	return false;
+}
+
+void ABaseCharacter::RemoveCharacter()
+{
+	//Destroy();
+}
+
+ARifle* ABaseCharacter::GetWeapon()
+{
+	return Weapon;
 }

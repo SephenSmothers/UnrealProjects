@@ -14,8 +14,8 @@ void UCoreResultsMenu::NativeConstruct()
 
 	if (GameInstance)
 	{
-		RestartButton->OnButtonCLicked.AddDynamic(this, &UCoreResultsMenu::EnterMainMenu); 
-		MainMenuButton->OnButtonCLicked.AddDynamic(this, &UCoreResultsMenu::RestartGame); 
+		RestartButton->OnButtonCLicked.AddDynamic(this, &UCoreResultsMenu::RestartGame);
+		MainMenuButton->OnButtonCLicked.AddDynamic(this, &UCoreResultsMenu::EnterMainMenu);
 	}
 	else
 	{

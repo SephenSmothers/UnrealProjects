@@ -98,8 +98,19 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void UseAmmo();
-};
 
+	UFUNCTION(BlueprintCallable)
+	void SetCurrentAmmo(float ammo);
+
+	UFUNCTION(BlueprintCallable)
+	void SetMaxAmmo(float ammo);
+
+	UFUNCTION(BlueprintCallable)
+	float GetCurrentAmmo();
+
+	UFUNCTION(BlueprintCallable)
+	float GetMaxAmmo();
+};
 
 
 

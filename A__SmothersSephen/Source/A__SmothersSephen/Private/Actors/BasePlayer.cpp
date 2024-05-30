@@ -33,16 +33,18 @@ void ABasePlayer::BeginPlay()
 	{
 		//PlayerController = pController;
 
-		UGameHUD* hud = CreateWidget<UGameHUD>(PlayerController, HUDClassType);
+		//maybe
+		hud = CreateWidget<UGameHUD>(PlayerController, HUDClassType);
 
-		if (hud) 
+		if (hud)  
 		{
-			hud->AddToViewport();
+			hud->AddToViewport(); 
 
 			HealthComponent->OnHurt.AddDynamic(hud, &UGameHUD::SetHealthComponent);
 			HealthComponent->OnDead.AddDynamic(hud, &UGameHUD::SetHealthComponentDead);
 			HealthComponent->OnHeal.AddDynamic(hud, &UGameHUD::SetHealthComponent);
 			Weapon->OnAmmoChanged.AddDynamic(hud, &UGameHUD::SettAmmoText);
+			AnimInstanceCore->OnDeathEnded.AddDynamic(this, &ABasePlayer::DeathEnded); 
 			Weapon->ReloadAmmo();
 		}
 	}
@@ -69,7 +71,8 @@ void ABasePlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 void ABasePlayer::DeathEnded()
 {
-	OnEndGame.Broadcast();
+	OnEndGame.Broadcast(this);
+
 }
 
 void ABasePlayer::WinGame()
@@ -113,6 +116,10 @@ void ABasePlayer::HandleDeath(float ratio)
 {
 	Super::HandleDeath(ratio);
 	DisableInput(PlayerController);
+
+	//maybe
+	hud->RemoveFromParent();
+	
 }
 
 bool ABasePlayer::CanPickupHealth()

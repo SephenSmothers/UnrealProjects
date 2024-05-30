@@ -72,6 +72,7 @@ void UCharacterAnimation::DeadAnimation_Implementation(float ratio)
 {
 	DeadSequence = DeadSequenceArray[FMath::RandRange(0, DeadSequenceArray.Num() - 1)];
 
+    //DeadAnimationEnded();
 	FTimerHandle time;
 	GetWorld()->GetTimerManager().SetTimer(time, this, &UCharacterAnimation::DeadAnimationEnded, DeadSequence->GetPlayLength());
 }

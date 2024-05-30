@@ -17,13 +17,27 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 	A__SMOTHERSSEPHEN_API UClass* Z_Construct_UClass_ABaseCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_A__SmothersSephen();
+	A__SMOTHERSSEPHEN_API UClass* Z_Construct_UClass_ARifle_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UChildActorComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	A__SMOTHERSSEPHEN_API UClass* Z_Construct_UClass_ARifle_NoRegister();
 	A__SMOTHERSSEPHEN_API UClass* Z_Construct_UClass_UCharacterAnimation_NoRegister();
 	A__SMOTHERSSEPHEN_API UClass* Z_Construct_UClass_UHealthComponent_NoRegister();
 	A__SMOTHERSSEPHEN_API UClass* Z_Construct_UClass_UBPI_CorePickupInterface_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ABaseCharacter::execGetWeapon)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(ARifle**)Z_Param__Result=P_THIS->GetWeapon();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ABaseCharacter::execRemoveCharacter)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->RemoveCharacter();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABaseCharacter::execHandleDeath)
 	{
 		P_GET_PROPERTY(FFloatProperty,Z_Param_ratio);
@@ -36,9 +50,43 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 	{
 		UClass* Class = ABaseCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetWeapon", &ABaseCharacter::execGetWeapon },
 			{ "HandleDeath", &ABaseCharacter::execHandleDeath },
+			{ "RemoveCharacter", &ABaseCharacter::execRemoveCharacter },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ABaseCharacter_GetWeapon_Statics
+	{
+		struct BaseCharacter_eventGetWeapon_Parms
+		{
+			ARifle* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ABaseCharacter_GetWeapon_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BaseCharacter_eventGetWeapon_Parms, ReturnValue), Z_Construct_UClass_ARifle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacter_GetWeapon_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_GetWeapon_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacter_GetWeapon_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Actors/BaseCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_GetWeapon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, nullptr, "GetWeapon", nullptr, nullptr, sizeof(BaseCharacter_eventGetWeapon_Parms), Z_Construct_UFunction_ABaseCharacter_GetWeapon_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_GetWeapon_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseCharacter_GetWeapon_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_GetWeapon_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseCharacter_GetWeapon()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseCharacter_GetWeapon_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ABaseCharacter_HandleDeath_Statics
 	{
@@ -69,6 +117,28 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseCharacter_HandleDeath_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseCharacter_RemoveCharacter_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacter_RemoveCharacter_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Actors/BaseCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_RemoveCharacter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, nullptr, "RemoveCharacter", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseCharacter_RemoveCharacter_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_RemoveCharacter_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseCharacter_RemoveCharacter()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseCharacter_RemoveCharacter_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -113,7 +183,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_A__SmothersSephen,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABaseCharacter_GetWeapon, "GetWeapon" }, // 1668647618
 		{ &Z_Construct_UFunction_ABaseCharacter_HandleDeath, "HandleDeath" }, // 519201331
+		{ &Z_Construct_UFunction_ABaseCharacter_RemoveCharacter, "RemoveCharacter" }, // 4114172595
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::Class_MetaDataParams[] = {
@@ -196,7 +268,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseCharacter, 1897334394);
+	IMPLEMENT_CLASS(ABaseCharacter, 1856889082);
 	template<> A__SMOTHERSSEPHEN_API UClass* StaticClass<ABaseCharacter>()
 	{
 		return ABaseCharacter::StaticClass();

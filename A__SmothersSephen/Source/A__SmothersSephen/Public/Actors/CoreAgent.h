@@ -50,4 +50,10 @@ public:
 
 	virtual void AgentAttack() override;
 
+	//UFUNCTION()
+	//void TestDead(float percent);
+
+	UFUNCTION()
+	void TestDead();
+
 };

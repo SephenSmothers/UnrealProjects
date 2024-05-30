@@ -41,5 +41,5 @@ void UCoreGameInstance::LoadMainLevel()
 
 void UCoreGameInstance::LoadCurrentLevel()
 {
-	LoadLevelSafe(CurrentLevelIndex);
+	LoadLevelSafe(FirstLevelIndex);
 }

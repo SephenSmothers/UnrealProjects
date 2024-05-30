@@ -29,9 +29,13 @@ void ACoreAgent::BeginPlay()
 	Weapon->OnWeaponStopped.AddDynamic(this, &ACoreAgent::EndAttack); 
 	HealthComponent->OnHurt.AddDynamic(this, &ACoreAgent::UpdateBlackboard);  
 	HealthComponent->OnDead.AddDynamic(this, &ACoreAgent::UpdateBlackboard); 
+	AnimInstanceCore->OnDeathEnded.AddDynamic(this, &ACoreAgent::TestDead); 
+	//HealthComponent->OnDead.AddDynamic(this, &ACoreAgent::TestDead);
 	UpdateBlackboard(1.0f);
 	 
 }
+
+
 
 //void ACoreAgent::UpdateHealth(float percentage)
 //{
@@ -81,5 +85,15 @@ void ACoreAgent::AgentAttack()
 {
 	if (Weapon)	
 		Weapon->Attack();	
+}
+
+//void ACoreAgent::TestDead(float percent)
+//{
+//	Destroy();
+//}
+
+void ACoreAgent::TestDead()
+{
+	Destroy();
 }
 

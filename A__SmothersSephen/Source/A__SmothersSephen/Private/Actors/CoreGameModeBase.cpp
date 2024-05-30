@@ -13,7 +13,7 @@
 
 void ACoreGameModeBase::BeginPlay()
 {
-	for (TActorIterator<ABaseCharacter> itr(GetWorld()); itr; ++itr) 
+	for (TActorIterator<ABaseCharacter> itr(GetWorld()); itr; ++itr)
 	{
 		Player = Cast<ABasePlayer>(*itr);
 		if (Player)
@@ -26,34 +26,47 @@ void ACoreGameModeBase::BeginPlay()
 		}
 	}
 
-	for (TActorIterator<ACorePlayerController> itr(GetWorld()); itr; ++itr) 
+	for (TActorIterator<ACorePlayerController> itr(GetWorld()); itr; ++itr)
 	{
-		CurrentController = Cast<ACorePlayerController>(*itr); 
+		CurrentController = Cast<ACorePlayerController>(*itr);
 		if (!CurrentController)
 		{
 			Destroy();
 		}
 	}
-	ResultsWidget = CreateWidget<UCoreResultsMenu, ACorePlayerController>(CurrentController, WidgetClass);
+	ResultsWidget = CreateWidget<UCoreResultsMenu>(CurrentController, WidgetClass);
 }
 
-void ACoreGameModeBase::RemovePlayer()
+void ACoreGameModeBase::RemovePlayer(AActor* player)
 {
 	for (TActorIterator<ABaseCharacter> itr(GetWorld()); itr; ++itr)
 	{
-		AAIController* AsPawn = Cast<AAIController>(itr->GetController()); 
-		if (AsPawn) 
+		ABasePlayer* tempPlayer = Cast<ABasePlayer>(*itr);
+		if (!tempPlayer)
+		{
+
+			itr->OnDestroyed.RemoveDynamic(this, &ACoreGameModeBase::RemoveEnemy);
+		}
+
+		AAIController* AsPawn = Cast<AAIController>(itr->GetController());
+		if (AsPawn)
 		{
 			AsPawn->BrainComponent->StopLogic("Player Died");
 		}
 	}
 
-	ResultsWidget->AddToViewport();
-	CurrentController->SetShowMouseCursor(false);
-	FInputModeUIOnly mode;
-	mode.SetWidgetToFocus(ResultsWidget->TakeWidget());
-	mode.SetLockMouseToViewportBehavior(EMouseLockMode::LockAlways);
-	CurrentController->SetInputMode(mode);
+	if (ResultsWidget)
+	{
+		ResultsWidget->AddToViewport();
+		CurrentController->SetShowMouseCursor(true);
+		FInputModeUIOnly mode;
+		mode.SetWidgetToFocus(ResultsWidget->TakeWidget());
+		mode.SetLockMouseToViewportBehavior(EMouseLockMode::LockAlways);
+		CurrentController->SetInputMode(mode);
+	}
+	else {
+		UE_LOG(Game, Warning, TEXT("Results Widget Was null"));
+	}
 }
 
 void ACoreGameModeBase::AddEnemy(AActor* Agent)
@@ -65,10 +78,14 @@ void ACoreGameModeBase::AddEnemy(AActor* Agent)
 void ACoreGameModeBase::RemoveEnemy(AActor* DeadAgent)
 {
 	NumEnemies--;
+
 	if (NumEnemies == 0)
 	{
+		//Player is null by the time I get here for some reason
+		// 
 		//Player->WinGame();
-		//ResultsWidget->SetWinCondition();
+		ResultsWidget->SetWinCondition();
 		ResultsWidget->AddToViewport();
+		//Player->OnDestroyed.RemoveDynamic(this, &ACoreGameModeBase::RemovePlayer);
 	}
 }

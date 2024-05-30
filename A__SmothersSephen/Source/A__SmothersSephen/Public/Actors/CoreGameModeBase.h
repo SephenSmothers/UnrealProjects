@@ -35,7 +35,7 @@ public:
 	virtual void BeginPlay() override;
 
 	UFUNCTION()
-	void RemovePlayer();
+	void RemovePlayer(AActor* Agent);
 
 	UFUNCTION()
 	void AddEnemy(AActor* Agent);

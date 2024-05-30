@@ -51,6 +51,12 @@ public:
 
 	virtual bool CanPickupHealth() override;
 
+	UFUNCTION()
+	void RemoveCharacter();
+
+	UFUNCTION()
+	ARifle* GetWeapon();
+
 };
 
 
